@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+</head>
+<body>
+   <div class="container">
+        <h1>Guessing Game</h1>
+        <p>Guess a number between 1 and 100</p>
+        <input type="number" value="0" id="guessField">
+        <button onclick="checkGuess()">Submit guess</button>
+        <p id="attempts" class="wrong hide">Too high! Try again. <span></span>attempts remaining.</p>
+   </div>
+    <script src="script.js" ></script>
+</body>
+</html>

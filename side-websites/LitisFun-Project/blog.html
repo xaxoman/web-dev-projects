@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <script defer src="js/main.js"></script> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LitisFun - Blog</title>
+      <style>
+
+         html {
+         
+         scroll-behavior: smooth;
+         }
+
+         .contact {
+
+         margin-top: 4rem;
+         }
+         .blog {
+         
+         background-color: white;
+         width: 29rem;
+         border-radius: 0.5rem;
+         padding: 0.8rem; 
+         height: auto;
+         transition: 0.5s;
+         display: inline-block; 
+         box-sizing: border-box; /* limits the margin */
+         margin: 1rem;
+         }
+         .blog:hover {
+         
+          box-shadow: 0.1rem 0.1rem 1rem #333;
+         transition: 0.5s;
+         -webkit-filter: grayscale(100%); 
+         filter: grayscale(100%);
+         transform: translateY(-2%);
+         }
+         .blog h1 {
+         text-align: left; 
+         font-size: 1.3rem;
+         padding: 0.5rem;
+         
+         }
+
+         .blog-img {
+
+            position: relative;
+            height: 15rem;
+         }
+         .blog a img {
+         position: absolute;
+         display: block;
+         object-fit: cover;
+         width: 100%;
+         height: 100%;
+         border-radius: 0.3rem;
+         }
+         .card-info {
+         text-align: left;
+         color: rgb(97, 97, 97);
+         font-size: 0.9rem;
+         font-weight: 800;
+         padding-left: 0.5rem;
+        
+         
+         }
+         .card-info span {
+         padding-left: 0.5rem;  
+         padding-bottom: 0.5rem;
+         
+         }
+
+         .colored-line span   {
+
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            background-size: 2rem 0.2rem;
+         }
+         
+
+         /* media queries for blog cards */
+         @media screen and (max-width: 65rem) {
+         .blog {
+         
+         max-width: 100vw; /*enlarges the blog card*/
+         width: 100%;
+         margin: 0; /*remove initial margin*/
+         margin-bottom: 2rem;
+         
+         
+          
+      
+      }
+     }
+
+         
+
+         #blog-title {
+
+            text-align: center;
+            font-size: 1.5rem;
+            
+       
+
+         }
+
+         #topbtn {
+           
+           position: fixed;
+           bottom: -5rem;
+           right: 2rem;
+           background-color:  rgb(37, 37, 37);
+           padding: 0.5rem;
+           border-radius: 50%;
+           box-shadow: 0.1rem 0.1rem 0.5rem black;
+           z-index: 999;
+           transition: 0.5s;
+         }
+
+         #topbtn img{
+           max-width: 2.5rem;
+           width: 100%;
+           
+         }
+
+         #topbtn:hover {
+
+            background-color: rgb(58, 58, 58);
+            transition: 0.5s;
+         }
+
+         #container {
+
+            text-align: center;
+            box-sizing: border-box; /* For the padding and margins inside the .blog class*/
+            margin: 0 auto;
+         }  
+        
+         
+
+      </style>
+   </head>
+   <body>
+      <!--Navbar menù-->
+      <nav class="navbar">
+         <div>
+          <a href="index.html"><img id="logo" src="img/main-logo.png"></a>
+         </div>
+         <ul class="nav-list" id="hidenavi">
+            <li>
+               <a href="">Contact</a>
+            </li>
+            <li>
+               <a href="blog.html">Blog</a>
+            </li>
+            <li>
+               <a href="about.html">About Me</a>
+            </li>
+         </ul>
+         <div class="hamburger" id="toggle">
+            <div class="fa fa-bars"></div>
+         </div>
+      </nav>
+      <section id="#top"></section>
+      <hr/>
+      <div id="blog-title"><h1>Blog</h1></div>
+      <!--Scroll to top button-->
+      <div id="topbtn">
+         <a onclick="topFunction()" href="#top"><img src="img/white-up.arrow.png"></a>
+      </div>
+      <!--Blog cards-->
+      <div id="container">
+         <div class="blog">
+            <div class="blog-img">
+              <a href="Blog/what-is-cybersecurity.html">
+               <img src="img/Blog-covers/cybersecurity-report-cisco.jpg">
+              </a>
+            </div>
+            <h1>What is CyberSecurity: explaining the basics about the cyberworld</h1>
+             <p class="card-info"> 
+              February 6, 2023
+              <span class="fa fa-clock-o"></span> 2min read 
+             </p>
+         </div>
+         <div class="blog">
+            <div class="blog-img">
+              <a href="google.com">
+               <img src="img/Blog-covers/NMAP.png">
+              </a>
+            </div>
+            <h1>What is CyberSecurity: explaining the basics about the cyberworld</h1>
+            <span class="colored-line"></span>
+             <p class="card-info"> 
+              February 6, 2023
+              <span class="fa fa-clock-o"></span> 2min read 
+             </p>
+         </div>
+      </div>
+         <!--Contact icons-->
+         <div class="contact">
+            <a target="_blank" href="#"><i class="fa fa-soundcloud"></i><span>Soundcloud</span></a> 
+            <a target="_blank" href="#"><i class="fa fa-linkedin"></i><span>LinkdeIn</span></a>  
+            <a target="_blank" href="#"><i class="fa fa-github"></i><span>Github</span></a>  
+         </div>
+         <hr/>
+         <!--Footer-->
+         <div id="footer">
+            <footer>
+               <p>
+                  ©Dennis Xhafaj - For any issues regarding this site, please contact me via: 
+                  <a target = "_blank" href= "mailto:xhafaj.dennis@protonmail.com" id="email">
+                  xhafaj.dennis@protonmail.com
+                  </a> 
+               </p>
+            </footer>
+         </div>
+      </div>
+   </body>
+</html>

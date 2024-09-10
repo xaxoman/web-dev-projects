@@ -2,13 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Projects</title>
 </head>
 <body>
-    
-    <script src="script.js"></script>
+    <header class="header">
+        <h1>My <span><p>JS</p></span> Projects</h1>
+      <div>
+        <img src="https://www.svgrepo.com/show/437918/lens.svg" id="search-lens">
+        <input type="text" id="search" placeholder="Search projects..." onkeyup="filterProjects()">
+        <button class="theme-toggle" onclick="theme_button()">
+            <img class="theme-image" src="https://www.svgrepo.com/show/513404/sun.svg" alt="Toggle Theme">
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="no-projects">No corresponding values</div>
+        <div class="project">
+            <a href="side-projects/14-traduttore/" target="_blank">
+                <img src="img/local-translator.png" alt="project17-preview" class="project-image">
+                <div>
+                    <h2>19. Local translator</h2>
+                    <time datetime="2024-04-08">April 8, 2024</time>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/16-objects_and_json/language-switcher/" target="_blank">
+                <img src="img/lang-swithcer.png" alt="project17-preview" class="project-image">
+                <div>
+                    <h2>18. Language switcher with json</h2>
+                    <time datetime="2024-04-08">April 8, 2024</time>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/16-objects_and_json/shopping-cart/" target="_blank">
+                <img src="img/shopping_cart.jpeg" alt="project17-preview" class="project-image">
+               <div>
+                <h2>17. Shopping Cart</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+               </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/15-array/memory-game/" target="_blank">
+                <img src="img/guessing-game.png" alt="project16-preview" class="project-image">
+                <div>
+                    <h2>16. Memory game</h2>
+                   <time datetime="2024-04-08">April 8, 2024</time>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/15-array/calculator-app/" target="_blank">
+                <img src="img/calculator.png" alt="project15-preview" class="project-image">
+                <h2>15. Calculator App</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/15-array/todo-app/" target="_blank">
+                <img src="img/todo-app.png" alt="project14-preview" class="project-image">
+                <h2>14. To-do App</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/15-array/PUSH_REMOVE/" target="_blank">
+                <h2>13. Push and remove elements from arrays</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/13-GuessingGame/" target="_blank">
+                <h2>12. Number guessing game</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/11-LogicOperators/" target="_blank">
+                <h2>11. Logic operators</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/12-WhileLoops/" target="_blank">
+                <h2>10. While loops</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/10-UnitConverter/" target="_blank">
+                <h2>9. Unit Converter</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/9-DarkMode/" target="_blank">
+                <h2>8. Theme switcher</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/8-ChangingStyle/" target="_blank">
+                <h2>7. changing style</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/7-AccessingAttributes/" target="_blank">
+                <h2>6. Accessing Attributes</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/6-UserInput/" target="_blank">
+                <h2>5. User Input</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/5-assigningValues/" target="_blank">
+                <h2>4. Assigning values</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/3-GetElementByTagName/" target="_blank">
+                <h2>3. GetElementByTagName</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/2-QuerySelector/" target="_blank">
+                <h2>2. Query selectors</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+        <div class="project">
+            <a href="side-projects/1-MessaggioSegreto/" target="_blank">
+                <h2>1. Messaggio Segreto</h2>
+                <time datetime="2024-04-08">April 8, 2024</time>
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Dennis Xhafaj</p>
+        <div class="social-icons">
+            <a href="https://github.com/xaxoman" target="_blank"><img src="img/github.svg" alt="githuv"></a>
+            <a href="https://linkedin.com/in/dennis-xhafaj-b48a2528a" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
+            <a href="mailto:xhafaj.dennis@gmail.com"><img src="img/email.svg" alt="email"></a>
+        </div>
+    </footer>
+ <script src="script.js"></script>
 </body>
 </html>

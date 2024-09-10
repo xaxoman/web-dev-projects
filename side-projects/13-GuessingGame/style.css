@@ -1,0 +1,64 @@
+body {
+
+    font-family: sans-serif;
+    background-color: gold;
+}
+
+.container {
+
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+button {
+
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: white;
+    color: blue;
+}
+
+
+
+input {
+
+    padding: 1rem;
+}
+
+.show {
+    
+        display: block;
+}
+
+.hide {
+
+    display: none;
+}
+
+.wrong {
+
+    color: red;
+}
+
+.correct {
+
+    color: green;
+}

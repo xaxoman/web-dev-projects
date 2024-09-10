@@ -1,0 +1,312 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #6200ea;
+    color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.568);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* jiggle animation */
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+header span {
+
+   
+    background-color: yellow;
+    padding: 0.1rem 0.5rem;
+    margin: 0.2rem;
+    transition: 0.5s;
+}
+
+h1:hover span {
+
+    animation: jiggle 0.5s ease;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+
+header span p {
+
+    color: black;
+    position: relative;
+    top: 0.7rem;
+    left: 0.2rem;
+    font-size: 1.5rem;
+}
+
+#search-lens {
+
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    filter: invert(1);
+    cursor: pointer;
+   
+}
+
+h1 {
+    font-size: 2rem;
+    display: flex;
+    cursor: pointer;
+}
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.7s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(360deg);
+}
+
+
+.theme-image {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+   
+}
+
+.project {
+    background-color: #fff;
+    padding: 0.7rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.project time {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-theme .project {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.dark-theme .header {
+    background-color: #333;
+}
+
+header div {
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* search appearing menu */
+
+/* appearing container for the search input, it will be at the center of the page*/
+#search {
+
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    animation: fadeIn 0.5s ease forwards;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.651);
+    padding: 1.5rem;
+    
+}
+
+
+
+ input {
+
+    width: 60rem;
+    border: none;
+    border-bottom: 1px solid #666;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    /* bottom shadow effect*/
+}
+
+input:focus {
+    outline: none;
+}
+   
+
+
+.project-image {
+
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    min-height: 18rem;
+    max-height: 18rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6200ea;
+    color: white;
+    position: relative;
+        bottom: 0;
+        left: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.social-icons img {
+
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.no-projects{
+    display: none;
+    text-align: center;;
+    /* make the container for the message in the center */
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 970px) {
+    
+   #search {
+
+       background-color: #b4b4b4d3;
+       backdrop-filter: blur(10px);
+    }
+
+    input {
+
+        width: 90%;
+        margin-top: 4rem;
+        height: 20vh;
+        font-size: 2rem;
+       
+    }
+
+    input::placeholder {
+
+        font-size: 1.5rem;
+        text-align: center;
+        color: #333;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    h1 {
+
+        font-size: 1.3rem;
+    }
+}
+
