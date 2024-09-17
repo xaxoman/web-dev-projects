@@ -1,0 +1,132 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff3535;
+    color: #f5f5f5;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#pomodoro-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #ff5d5d;
+    padding: 2rem;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    height: fit-content;
+    text-align: center;
+}
+
+#pomodoro-container img{
+
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+
+ #start {
+
+    border: 0;
+    color: #ff5d5d;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 0.3rem solid rgb(202, 202, 202);
+}
+
+ #start:active {
+
+    margin-top: 0.2rem;
+    border-bottom: 0rem solid rgb(202, 202, 202);
+}
+
+#pomodoro-container span {
+
+    font-size: 5rem;
+    margin: 1rem auto;
+  
+}
+
+.misc-buttons {
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    
+}
+
+button {
+
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.misc-buttons button {
+
+    border-bottom: 0 !important;
+    border: 1px solid #f5f5f5 !important;
+    background-color: transparent;
+    color: #f5f5f5 !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+    transition: all 0.3s;
+}
+
+.misc-buttons button:hover {
+
+    background-color: #f5f5f5;
+    color: #ff5d5d !important;
+    transition: all 0.3s;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#reset {
+
+    border-bottom: 0 !important;
+    background-color: transparent;
+    color: #f5f5f5 !important;
+    font-size: 2rem !important;
+    cursor: pointer;
+    border: 0;
+    margin-left: 1rem;
+
+
+}
+
+#reset:hover {
+
+    animation: rotate 1s;
+}
+
+
