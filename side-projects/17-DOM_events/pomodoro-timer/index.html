@@ -17,13 +17,13 @@
         <p>Timer</p>
     </div>
     <div class="misc-buttons">
-        <button>Custom Values</button>
-        <button>Short Break</button>
-        <button>Long break</button>
+        <button id="work">Pomodoro</button>
+        <button id="short">Short Break</button>
+        <button id="long">Long break</button>
     </div>
     <span id="time"></span>
    <div style="display: flex; align-items: center; justify-content: center;">
-    <button id="start" onclick="startTimer()">START</button>
+    <button id="start" onclick="updateTimer()">START</button>
     <button id="reset">
         <i class="fas fa-redo"></i>
     </button>
