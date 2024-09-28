@@ -1,14 +1,35 @@
 // theme switcher
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Check localStorage for the saved theme
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        document.body.classList.add(savedTheme);
+        
+        // Update the theme toggle button icon based on the saved theme
+        const image_link = document.querySelector(".theme-image");
+        if (savedTheme === 'dark-theme') {
+            image_link.src = "https://www.svgrepo.com/show/491454/moon.svg";
+        } else {
+            image_link.src = "https://www.svgrepo.com/show/513404/sun.svg";
+        }
+    }
+});
+
 function theme_button() {
-    const theme_button = document.querySelector(".theme-toggle");
     const image_link = document.querySelector(".theme-image");
     
+    // Toggle between dark and light theme
     document.body.classList.toggle("dark-theme");
     
-    if (image_link.src.includes("sun.svg")) {
+    // Check the current theme and set the correct image
+    if (document.body.classList.contains("dark-theme")) {
         image_link.src = "https://www.svgrepo.com/show/491454/moon.svg";
+        localStorage.setItem('theme', 'dark-theme'); // Save the dark theme in localStorage
     } else {
         image_link.src = "https://www.svgrepo.com/show/513404/sun.svg";
+        localStorage.setItem('theme', ''); // Clear the dark theme from localStorage (default is light)
     }
 }
 
