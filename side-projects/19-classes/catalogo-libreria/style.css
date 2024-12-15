@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
 
     margin: 0;
@@ -6,10 +8,57 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Inter", sans-serif;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
+
+.container {
+
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+#selection {
+
+    color: red;
+    margin-top: 2rem;
+}
+
+#navbar {
+
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1.5rem;
+
+}
+
+#navbar div {
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#navbar div:hover {
+
+    background-color: red;
+    color: white;
+    margin-top: -0.3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    margin: -0.5rem; /* COSI EVITO SALTELLAMENTI DOVUTI ALL'AUMENTO DI PADDING E LA POSITION ABSOLUTE */
+}
+
+#lista-libri {
+
+    display: grid;
+    
+}
+
+
