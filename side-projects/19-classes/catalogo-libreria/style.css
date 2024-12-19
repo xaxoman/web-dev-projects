@@ -31,7 +31,7 @@ body {
     font-weight: bold;
     justify-content: space-evenly;
     background-color: rgb(240, 240, 240);
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     padding: 1.5rem;
@@ -55,10 +55,73 @@ body {
     margin: -0.5rem; /* COSI EVITO SALTELLAMENTI DOVUTI ALL'AUMENTO DI PADDING E LA POSITION ABSOLUTE */
 }
 
-#lista-libri {
 
-    display: grid;
+ #modal-content {
+
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
     
 }
 
+#modal-content input {
+
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-bottom: 0.12rem solid rgb(116, 116, 116);
+}
+
+#modal-content button {
+
+    margin-top: 0.6rem;
+    padding: 0.6rem 0.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#modal-content button:hover {
+
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#close-modal {
+
+   margin: -0.5rem 0rem 0rem -1.2rem;
+   font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.container_libro {
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container_libro img {
+
+    width: 100%;
+    max-width: 13rem;
+}
+
+/* WRAPPER GRID */
+.catalogo_wrapper {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
 
