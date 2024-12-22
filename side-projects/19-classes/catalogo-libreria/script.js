@@ -1,91 +1,123 @@
-const modal = document.getElementById("modal-content");
-const aggiungi_libro = document.getElementById("AggiungiLibro");
-const chiudi_modal = document.getElementById("close-modal");
+// Ottieni i riferimenti agli elementi del DOM
+const modal = document.getElementById("modal-content"); // Popup per aggiungere un libro
+const aggiungi_libro = document.getElementById("AggiungiLibro"); // Bottone per aprire il popup
+const chiudi_modal = document.getElementById("close-modal"); // Bottone per chiudere il popup
 
-// DATI IN INPUT
+// Input fields per inserire i dettagli del libro
 const titolo_INPUT = document.getElementById("titolo");
 const autore_INPUT = document.getElementById("autore");
 const genere_INPUT = document.getElementById("genere");
 const anno_INPUT = document.getElementById("anno");
 const copertina_INPUT = document.getElementById("img");
 
-// Mostra il popup in cui andranno inserite le informazioni del libro, poi salva questa info in LocalStorage.
-// successivamente i dati all'interno della LocalStorage varranno utilizzati per creare il catalogo dei libri nell'interfaccia
-function AddBook() {
-
-    // classe generale per i libri
-    class Libro {
-        constructor(titolo, autore, genere, anno, img) {
-
-            this.titolo = titolo;
-            this.autore = autore;
-            this.genere = genere;
-            this.anno = anno;
-            this.img = img;
-            
-        }
-
-        creaLibro() {
-
-            // creo il wrapper per ogni libro
-            const libro_wrapper = document.createElement('div');
-            libro_wrapper.classList.add('container_libro');
-            document.body.appendChild(libro_wrapper);
-
-            // Creo gli elementi HTML per il libro
-
-            const anno_HTML = document.createElement('h5');
-            anno_HTML.textContent = this.anno;
-            document.body.appendChild(anno_HTML);
-
-            const genere_HTML = document.createElement('h4');
-            genere_HTML.textContent = this.genere;
-            document.body.appendChild(genere_HTML);
-
-            const autore_HTML = document.createElement('h3');
-            autore_HTML.textContent = this.autore;
-            document.body.appendChild(autore_HTML);
-
-            const titolo_HTML = document.createElement('h2');
-            titolo_HTML.textContent = this.titolo;
-            document.body.appendChild(titolo_HTML);
-
-            const img_HTML = document.createElement('img');
-            img_HTML.src = this.img;
-            document.body.appendChild(img_HTML);
-
-            // Aggiungo gli elementi HTML al wrapper
-            libro_wrapper.appendChild(genere_HTML);
-            libro_wrapper.appendChild(anno_HTML);
-            libro_wrapper.appendChild(autore_HTML);
-            libro_wrapper.appendChild(titolo_HTML);
-            libro_wrapper.appendChild(img_HTML);
-
-            // metto il wrapper dentro il catalogo
-            const catalogo = document.querySelector('.catalogo_wrapper');
-            catalogo.classList.add('catalogo_wrapper');
-            catalogo.appendChild(libro_wrapper);
-            
-
-        }
+// Classe che rappresenta un libro
+class Libro {
+    constructor(titolo, autore, genere, anno, img) {
+        this.titolo = titolo; // Titolo del libro
+        this.autore = autore; // Autore del libro
+        this.genere = genere; // Genere del libro
+        this.anno = anno; // Anno di pubblicazione
+        this.img = img; // URL dell'immagine di copertina
     }
 
-    // Creiamo un nuovo oggetto con i dati inseriti dall'utente
-    // IL .value VA MESSO DIRETTAMENTE QUANDO SI SALVA L'OGGETTO NELLA CLASSE E NON QUANDO SI DICHIARA LA VARIABILE
-    const libro = new Libro(titolo_INPUT.value, autore_INPUT.value, genere_INPUT.value, anno_INPUT.value, copertina_INPUT.value);
-    // chiamo il metodo per creare il libro
-    libro.creaLibro();
-    console.log(libro);
+    // Metodo per creare e visualizzare un libro nell'interfaccia utente
+    creaLibro(param_libro = this) {
+        // Estrai i dettagli del libro dall'oggetto passato come parametro
+        const { titolo, autore, genere, anno, img } = param_libro;
 
-   
+        // Crea un wrapper per i dettagli del libro
+        const libro_wrapper = document.createElement('div');
+        libro_wrapper.classList.add('container_libro');
+
+        // Crea gli elementi HTML per i dettagli del libro
+        const genere_HTML = document.createElement('h4');
+        genere_HTML.textContent = genere;
+
+        const anno_HTML = document.createElement('h5');
+        anno_HTML.textContent = anno;
+
+        const autore_HTML = document.createElement('h3');
+        autore_HTML.textContent = autore;
+
+        const titolo_HTML = document.createElement('h2');
+        titolo_HTML.textContent = titolo;
+
+        const img_HTML = document.createElement('img');
+        img_HTML.src = img;
+
+        // Aggiungi i dettagli del libro al wrapper
+        libro_wrapper.appendChild(anno_HTML);
+        libro_wrapper.appendChild(genere_HTML);
+        libro_wrapper.appendChild(autore_HTML);
+        libro_wrapper.appendChild(titolo_HTML);
+        libro_wrapper.appendChild(img_HTML);
+
+        // Aggiungi il wrapper alla sezione "catalogo" nell'interfaccia
+        const catalogo = document.querySelector('.catalogo_wrapper');
+        catalogo.appendChild(libro_wrapper);
+    }
+
+    // Metodo per salvare un libro in localStorage
+    salvaLibro() {
+        // Converte i dettagli del libro in un oggetto JSON
+        const libro_json = {
+            titolo: this.titolo,
+            autore: this.autore,
+            genere: this.genere,
+            anno: this.anno,
+            copertina: this.img,
+        };
+
+        // Recupera l'elenco dei libri già salvati oppure crea un array vuoto
+        let books = JSON.parse(localStorage.getItem("books")) || [];
+
+        // Aggiungi il nuovo libro all'elenco
+        books.push(libro_json);
+
+        // Salva l'elenco aggiornato in localStorage
+        localStorage.setItem("books", JSON.stringify(books));
+    }
 }
 
-    // Mostra il popup con eventListener
-    aggiungi_libro.addEventListener('click', () => {
-        modal.style.display = 'flex';
+// Funzione per caricare e visualizzare i libri salvati in localStorage
+function loadSavedBooks() {
+    // Recupera l'elenco dei libri da localStorage oppure crea un array vuoto
+    const books = JSON.parse(localStorage.getItem("books")) || [];
+
+    // Per ogni libro salvato, crea un'istanza della classe "Libro" e visualizzalo
+    books.forEach(book => {
+        const savedLibro = new Libro(
+            book.titolo,
+            book.autore,
+            book.genere,
+            book.anno,
+            book.copertina
+        );
+        savedLibro.creaLibro(savedLibro);
     });
-    
-    // chiudi il popup quando clicchi la x
-    chiudi_modal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
+}
+
+// Funzione per aggiungere un nuovo libro
+function AddBook() {
+    // Crea un'istanza della classe "Libro" con i dati inseriti dall'utente
+    const libro = new Libro(titolo_INPUT.value, autore_INPUT.value, genere_INPUT.value, anno_INPUT.value, copertina_INPUT.value);
+
+    // Salva il libro in localStorage
+    libro.salvaLibro();
+
+    // Visualizza il libro nell'interfaccia
+    libro.creaLibro();
+}
+
+// Carica i libri salvati quando la pagina viene caricata
+window.onload = loadSavedBooks;
+
+// Mostra il popup per aggiungere un nuovo libro
+aggiungi_libro.addEventListener('click', () => {
+    modal.style.display = 'flex';
+});
+
+// Nascondi il popup quando si clicca sulla "X"
+chiudi_modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
