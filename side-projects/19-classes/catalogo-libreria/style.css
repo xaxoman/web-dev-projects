@@ -11,6 +11,7 @@ body {
     font-family: "Inter", sans-serif;
     height: 100vh;
     background-color: #ffffff;
+    margin-bottom: 30rem;
 }
 
 .container {
@@ -109,6 +110,17 @@ body {
 
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 2rem;
+}
+
+.container_libro h2 { /* TITOLO*/
+
+    margin-top: 0.4rem;
+}
+
+.container_libro h3 { /* AUTORE */
+
+    color: rgb(54, 54, 54);
 }
 
 .container_libro img {
@@ -121,6 +133,7 @@ body {
 .catalogo_wrapper {
 
     display: grid;
+    gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
 
 }
