@@ -32,6 +32,10 @@ class Libro {
         libro_wrapper.classList.add('container_libro');
 
         // Crea gli elementi HTML per i dettagli del libro
+        const preferito = document.createElement('i'); // Icona per aggiungere il libro ai preferiti
+        preferito.textContent = "";
+        preferito.classList.add('fas', 'fa-star', 'preferito');
+
         const genere_HTML = document.createElement('h4');
         genere_HTML.textContent = genere;
 
@@ -48,15 +52,25 @@ class Libro {
         img_HTML.src = img;
 
         // Aggiungi i dettagli del libro al wrapper
+        libro_wrapper.appendChild(preferito);
         libro_wrapper.appendChild(anno_HTML);
         libro_wrapper.appendChild(genere_HTML);
         libro_wrapper.appendChild(autore_HTML);
         libro_wrapper.appendChild(titolo_HTML);
         libro_wrapper.appendChild(img_HTML);
 
+
         // Aggiungi il wrapper alla sezione "catalogo" nell'interfaccia
         const catalogo = document.querySelector('.catalogo_wrapper');
         catalogo.appendChild(libro_wrapper);
+
+        // Aggiungi un event listener per aggiungere il libro ai preferiti
+        preferito.addEventListener("dblclick", () => {
+
+            preferito.style.color = "red";
+            preferito.style.transform = "rotate(360deg)";
+            preferito.style.transition = "0.5s"; 
+        });
     }
 
     // Metodo per salvare un libro in localStorage
@@ -151,6 +165,29 @@ function CercaLibro() {
     }
 }
 
+
+
+// funzione per vedere i libri salvati
+
+function LibriSalvati() {
+
+    // titolo della pagina
+    const titolo_pagina = document.getElementById("selection");
+    titolo_pagina.textContent = "Preferiti";
+
+    // controlla quali libri sono stati aggiunti ai preferiti
+    const libri = document.querySelectorAll('.container_libro');
+
+    libri.forEach(libro => {
+        const preferito = libro.querySelector('.preferito');
+        if (preferito.style.color !== "red") {
+            libro.style.display = 'none';
+        }
+    });
+
+    
+    
+}
 
 // Mostra il popup per aggiungere un nuovo libro
 aggiungi_libro.addEventListener('click', () => {
