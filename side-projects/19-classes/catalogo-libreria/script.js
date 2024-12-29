@@ -1,4 +1,3 @@
-// Ottieni i riferimenti agli elementi del DOM
 const modal = document.getElementById("modal-content"); // Popup per aggiungere un libro
 const modal_ricerca = document.getElementById("modal-ricerca");
 const aggiungi_libro = document.getElementById("AggiungiLibro"); // Bottone per aprire il popup
@@ -11,6 +10,7 @@ const autore_INPUT = document.getElementById("autore");
 const genere_INPUT = document.getElementById("genere");
 const anno_INPUT = document.getElementById("anno");
 const copertina_INPUT = document.getElementById("img");
+
 
 // Classe che rappresenta un libro
 class Libro {
@@ -117,18 +117,55 @@ window.onload = loadSavedBooks;
 
 //funzione per cercare un libro in base ai dati del libro (titolo, autore, genere, anno)
 function CercaLibro() {
-    
+    const titolo_RICERCA = document.getElementById("titolo_RICERCA").value.trim().toLowerCase() || "";
+    const autore_RICERCA = document.getElementById("autore_RICERCA").value.trim().toLowerCase() || "";
+    const genere_RICERCA = document.getElementById("genere_RICERCA").value.trim().toLowerCase() || "";
 
+    if (!titolo_RICERCA && !autore_RICERCA && !genere_RICERCA) {
+        alert("Inserisci almeno un criterio di ricerca!");
+        return;
+    }
+
+    const libri = document.querySelectorAll('.container_libro');
+    let libro_trovato = false;
+
+    libri.forEach(libro => {
+        const titolo = libro.querySelector('h2').innerText.toLowerCase();
+        const autore = libro.querySelector('h3').innerText.toLowerCase();
+        const genere = libro.querySelector('h4').innerText.toLowerCase();
+
+        if (
+            (!titolo_RICERCA || titolo.includes(titolo_RICERCA)) &&
+            (!autore_RICERCA || autore.includes(autore_RICERCA)) &&
+            (!genere_RICERCA || genere.includes(genere_RICERCA))
+        ) {
+            libro.style.display = 'flex';
+            libro_trovato = true;
+        } else {
+            libro.style.display = 'none';
+        }
+    });
+
+    if (!libro_trovato) {
+        alert('Nessun libro trovato con i criteri forniti.');
+    }
 }
+
 
 // Mostra il popup per aggiungere un nuovo libro
 aggiungi_libro.addEventListener('click', () => {
+    modal_ricerca.style.display = 'none'; // cosi i due modal non si sovrappongono
     modal.style.display = 'flex';
+    document.getElementById("titolo").focus();
+
 });
 
 // mostra popuo ricerca
 mostra_ricerca.addEventListener('click', () => {
+    modal.style.display = "none";
     modal_ricerca.style.display = "flex";
+    // metto autofocus sulla barra di ricerca
+    document.getElementById("titolo_RICERCA").focus();
 });
 
 // Nascondi il popup quando si clicca sulla "X"
