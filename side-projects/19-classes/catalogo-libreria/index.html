@@ -21,20 +21,28 @@
     <!-- MODAL PER INSERIRE I DATI DEL LIBRO -->
     <div id="modal">
         <div id="modal-content">
-            <span id="close-modal">&times;</span>
+            <span class="close-modal">&times;</span>
             <h2>Aggiungi un libro</h2>
             <input type="text" id="titolo" placeholder="*Titolo" autofocus required>
             <input type="text" id="autore" placeholder="*Autore" required>
             <input type="text" id="genere" placeholder="*Genere" required>
             <input type="number" id="anno" placeholder="Anno">
             <input type="url" id="img" placeholder="*URL immagine" required>
-            <button onclick="AddBook()">Aggiungi</button >
+            <button class="modal-button" onclick="AddBook()">Aggiungi</button >
         </div>
     </div>
-    
+    <!-- MODAL PER LA RICERCA -->
+     <div id="modal-ricerca">
+        <span class="close-modal">&times;</span>
+        <h2>Cerca libro</h2>
+        <input type="text" placeholder="Titolo Libro" autofocus>
+        <input type="text" placeholder="Genere">
+        <input type="text" placeholder="Autore">
+        <button class="modal-button" onclick="CercaLibro()">Cerca</button>
+     </div>
     <nav id="navbar">
         <div id="AggiungiLibro"><i class="fas fa-plus"></i> Aggiungi</div>
-        <div onclick="search()"><i class="fas fa-search"></i> Cerca</div>
+        <div id="MostraRicerca"><i class="fas fa-search"></i> Cerca</div>
         <div onclick="saved()"><i class="fas fa-bookmark"></i> Salvati</div>
         <div onclick="ShowSettings()"><i class="fas fa-cog"></i> Impostazioni</div>
     </nav>

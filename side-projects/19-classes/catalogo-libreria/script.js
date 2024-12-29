@@ -1,7 +1,9 @@
 // Ottieni i riferimenti agli elementi del DOM
 const modal = document.getElementById("modal-content"); // Popup per aggiungere un libro
+const modal_ricerca = document.getElementById("modal-ricerca");
 const aggiungi_libro = document.getElementById("AggiungiLibro"); // Bottone per aprire il popup
-const chiudi_modal = document.getElementById("close-modal"); // Bottone per chiudere il popup
+const mostra_ricerca = document.getElementById("MostraRicerca"); // bottone per aprire il popup di ricerca
+const chiudi_modal_elements = document.querySelectorAll(".close-modal"); // Bottone per chiudere il popup
 
 // Input fields per inserire i dettagli del libro
 const titolo_INPUT = document.getElementById("titolo");
@@ -101,6 +103,7 @@ function loadSavedBooks() {
 function AddBook() {
     // Crea un'istanza della classe "Libro" con i dati inseriti dall'utente
     const libro = new Libro(titolo_INPUT.value, autore_INPUT.value, genere_INPUT.value, anno_INPUT.value, copertina_INPUT.value);
+    console.log(libro);
 
     // Salva il libro in localStorage
     libro.salvaLibro();
@@ -112,12 +115,28 @@ function AddBook() {
 // Carica i libri salvati quando la pagina viene caricata
 window.onload = loadSavedBooks;
 
+//funzione per cercare un libro in base ai dati del libro (titolo, autore, genere, anno)
+function CercaLibro() {
+    
+
+}
+
 // Mostra il popup per aggiungere un nuovo libro
 aggiungi_libro.addEventListener('click', () => {
     modal.style.display = 'flex';
 });
 
+// mostra popuo ricerca
+mostra_ricerca.addEventListener('click', () => {
+    modal_ricerca.style.display = "flex";
+});
+
 // Nascondi il popup quando si clicca sulla "X"
-chiudi_modal.addEventListener('click', () => {
-    modal.style.display = 'none';
+// Uso il foreach per non creare un elemento (Icona X per chiudere) 
+// differente per ogni modal dato che con gli ID non funzione uso una normale classe
+chiudi_modal_elements.forEach(element => {
+    element.addEventListener('click', () => {
+        modal.style.display = 'none';
+        modal_ricerca.style.display = 'none';
+    });
 });
