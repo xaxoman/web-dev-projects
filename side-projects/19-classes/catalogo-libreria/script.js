@@ -185,7 +185,7 @@ function LibriSalvati() {
         }
     });
 
-    
+
     
 }
 
@@ -214,3 +214,14 @@ chiudi_modal_elements.forEach(element => {
         modal_ricerca.style.display = 'none';
     });
 });
+
+// tasto home per tornare alla pagina principale
+
+function MostraLibri() {
+
+    // mostra tutti i libri
+    const libri = document.querySelectorAll('.container_libro');
+    libri.forEach(libro => {
+        libro.style.display = 'flex';
+    });
+}
