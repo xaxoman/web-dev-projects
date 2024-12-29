@@ -35,16 +35,16 @@
      <div id="modal-ricerca">
         <span class="close-modal">&times;</span>
         <h2>Cerca libro</h2>
-        <input type="text" placeholder="Titolo Libro" autofocus>
-        <input type="text" placeholder="Genere">
-        <input type="text" placeholder="Autore">
+        <input type="text" id="titolo_RICERCA" placeholder="Titolo Libro" autofocus>
+        <input type="text" id="genere_RICERCA" placeholder="Genere">
+        <input type="text" id="autore_RICERCA" placeholder="Autore">
         <button class="modal-button" onclick="CercaLibro()">Cerca</button>
      </div>
     <nav id="navbar">
         <div id="AggiungiLibro"><i class="fas fa-plus"></i> Aggiungi</div>
         <div id="MostraRicerca"><i class="fas fa-search"></i> Cerca</div>
-        <div onclick="saved()"><i class="fas fa-bookmark"></i> Salvati</div>
-        <div onclick="ShowSettings()"><i class="fas fa-cog"></i> Impostazioni</div>
+        <div onclick="LibriSalvati()"><i class="fas fa-bookmark"></i> Salvati</div>
+        <div onclick="MostraImpostazioni()"><i class="fas fa-cog"></i> Impostazioni</div>
     </nav>
     <script src="script.js"></script>
 </body>
