@@ -1,86 +1,91 @@
-// theme switcher
+// SEARCH BAR FUNCTIONALITY
+const search = document.getElementById('search');
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Check localStorage for the saved theme
-    const savedTheme = localStorage.getItem('theme');
-    
-    if (savedTheme) {
-        document.body.classList.add(savedTheme);
-        
-        // Update the theme toggle button icon based on the saved theme
-        const image_link = document.querySelector(".theme-image");
-        if (savedTheme === 'dark-theme') {
-            image_link.src = "https://www.svgrepo.com/show/491454/moon.svg";
+search.addEventListener('input', () => {
+    const query = search.value.toLowerCase();
+    document.querySelectorAll('.topic').forEach(topic => {
+        const headingText = topic.querySelector('h2').textContent.toLowerCase();
+        const paragraphText = topic.querySelector('p').textContent.toLowerCase();
+        if (headingText.includes(query) || paragraphText.includes(query)) {
+            topic.style.display = 'block';
         } else {
-            image_link.src = "https://www.svgrepo.com/show/513404/sun.svg";
-        }
-    }
-});
-
-function theme_button() {
-    const image_link = document.querySelector(".theme-image");
-    
-    // Toggle between dark and light theme
-    document.body.classList.toggle("dark-theme");
-    
-    // Check the current theme and set the correct image
-    if (document.body.classList.contains("dark-theme")) {
-        image_link.src = "https://www.svgrepo.com/show/491454/moon.svg";
-        localStorage.setItem('theme', 'dark-theme'); // Save the dark theme in localStorage
-    } else {
-        image_link.src = "https://www.svgrepo.com/show/513404/sun.svg";
-        localStorage.setItem('theme', ''); // Clear the dark theme from localStorage (default is light)
-    }
-}
-
-
-// barra di ricerca
-const noProjects = document.querySelector('.no-projects');
-const footer = document.querySelector('.footer');
-function filterProjects() {
-    const searchValue = document.getElementById('search').value.toLowerCase();
-    const projects = document.querySelectorAll('.project');
-    let hasVisibleProjects = false;
-
-    projects.forEach(project => {
-        const title = project.querySelector('h2').innerText.toLowerCase();
-        if (title.includes(searchValue)) {
-            project.style.display = 'block';
-            hasVisibleProjects = true;
-        } else {
-            project.style.display = 'none';
-            footer.style.position = 'absolute';
+            topic.style.display = 'none';
         }
     });
+});
 
-    if (searchValue === "" || hasVisibleProjects) {
-        noProjects.style.display = 'none';
-        footer.style.position = 'relative';
-    } else {
-        noProjects.style.display = 'flex';
-    }
+const themeToggle = document.querySelectorAll('#theme-toggle i');
+
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    themeToggle.forEach((icon) => {
+        icon.classList.toggle('fa-sun');
+        icon.classList.toggle('fa-moon');
+    });
+
+    // save the theme preference in local storage
+    const isLightTheme = document.body.classList.contains('light-theme');
+    localStorage.setItem('isLightTheme', isLightTheme);
 }
 
-// script che mostra il menu per la barra di ricerca
+);
 
-const search_lens = document.getElementById("search-lens");
-const search_menu = document.getElementById("search");
 
-search_lens.addEventListener("click", function() {
-    search_menu.style.display = "block";
-    search_menu.focus(); // mette il focus sulla barra di ricerca / cursore
-});
+// get the theme preference from local storage
+const isLightTheme = JSON.parse(localStorage.getItem('isLightTheme'));
 
-document.addEventListener("click", function(event) {
-    if (!event.target.matches("#search-lens") && !event.target.matches("#search")) {
+if (isLightTheme) {
 
-        search_menu.style.display = "none";
-        noProjects.style.display = 'none';
-        search_menu.value = "";
-        footer.style.position = 'relative';
-        filterProjects(); 
-        
+    document.body.classList.add('light-theme');
+    themeToggle.forEach((icon) => {
+        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-moon');
+    });
 
-    }
-});
+}
 
+
+/* SCRIPT FOR THE CHANGING OF THE LANGUAGE */
+document.getElementById('language-select').addEventListener('change', function() {
+    const selectedLanguage = this.value;
+    localStorage.setItem('preferredLanguage', selectedLanguage);
+    loadTranslations(selectedLanguage);
+  });
+  
+  function loadTranslations(language) {
+    fetch(`locales/${language}.json`)
+        .then(response => response.json())
+        .then(translations => {
+            updateLanguage(translations);
+        })
+        .catch(error => console.error('Error loading translations:', error));
+  }
+  
+  function updateLanguage(translations) {
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        const keys = key.split('.');
+        let translation = translations;
+        keys.forEach(k => {
+            translation = translation[k];
+        });
+       
+        // Replace \n with <br> to create line breaks
+        if (translation) {
+          translation = translation.replace(/\n/g, '<br>');
+      }
+  
+      // If it's an input, set placeholder. Otherwise, set HTML.
+      if (element.tagName.toLowerCase() === 'input') {
+          element.setAttribute('placeholder', translation);
+      } else {
+          element.innerHTML = translation;
+      }
+      
+    });
+  }
+  
+  // Load saved language preference or default to 'en'
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  document.getElementById('language-select').value = savedLanguage;
+  loadTranslations(savedLanguage);

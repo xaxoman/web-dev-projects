@@ -1,0 +1,13 @@
+{
+  "introHeading": "Developer Roadmap",
+  "introParagraph": "Your structured path to becoming a full-stack developer. Choose your learning track and start your journey.",
+  "searchPlaceholder": "Search for a technology...",
+  "javascriptHeading": "JavaScript",
+  "javascriptParagraph": "Master the fundamentals of JavaScript programming",
+  "nodeHeading": "Node.js",
+  "nodeParagraph": "Build scalable backend applications with Node.js",
+  "reactHeading": "React.js",
+  "reactParagraph": "Learn modern React with hooks and best practices",
+  "sqlHeading": "SQL",
+  "sqlParagraph": "Master the fundamentals of SQL and database design"
+}

@@ -3,223 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>JavaScript Projects</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Web developement portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <h1>My <span><p>JS</p></span> Projects</h1>
-      <div>
-        <img src="https://www.svgrepo.com/show/437918/lens.svg" id="search-lens">
-        <input type="text" id="search" placeholder="Search projects..." onkeyup="filterProjects()">
-        <button class="theme-toggle" onclick="theme_button()">
-            <img class="theme-image" src="https://www.svgrepo.com/show/513404/sun.svg" alt="Toggle Theme">
-        </button>
-      </div>
-    </header>
-
     <div class="container">
-        <!-- IN CASO DI NESSUN RISULTATO DI RICERCA -->
-        <div class="no-projects">No corresponding values</div>
-        <div class="project">
-            <a href="side-projects/19-classes/catalogo-libreria/" target="_blank">
-                <img src="img/catalogo-libreria.png" alt="project21-preview" class="project-image">
-                <div>
-                    <h2>25. Catalogo libreria </h2>
-                    <time datetime="2024-04-08"> 30 December, 2024</time>
+        <div class="intro">
+            <h1 data-key="introHeading"></h1>
+            <p data-key="introParagraph"></p>
+        </div>
+        <!-- SEARCH BAR -->
+        <input type="search" id="search" data-key="searchPlaceholder">
+        <div class="topic-container">
+            <div class="topic">
+                <div class="topic-img-wrapper">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javascript">
                 </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/18-AsyncProcesses/writing_speed/" target="_blank">
-                <img src="img/calcola_velocita.png" alt="project21-preview" class="project-image">
+                <h2 data-key="javascriptHeading"></h2>
+                <p data-key="javascriptParagraph"></p>
                 <div>
-                    <h2>24. Calcola WPM </h2>
-                    <time datetime="2024-04-08">November 10, 2024</time>
+                    <img src="https://avatars.githubusercontent.com/u/88208912?v=4" alt="DENNIS XHAFAJ">
+                    <p>Dennis Xhafaj</p>
                 </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/17-DOM_events/pomodoro-timer/" target="_blank">
-                <img src="img/pomodoro-timer.png" alt="project21-preview" class="project-image">
+            </div>
+            <div class="topic">
+                <div class="topic-img-wrapper">
+                    <img src="https://philna.sh/_astro/node.DvAuachI.png" alt="javascript">
+                </div>
+                <h2 data-key="nodeHeading"></h2>
+                <p data-key="nodeParagraph"></p>
                 <div>
-                    <h2>23. Pomodoro Timer</h2>
-                    <time datetime="2024-04-08">September 15, 2024</time>
+                    <img src="https://avatars.githubusercontent.com/u/88208912?v=4" alt="DENNIS XHAFAJ">
+                    <p>Dennis Xhafaj</p>
                 </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/15-array/memory-game/" target="_blank">
-                <img src="img/momery-game.webp" alt="project16-preview" class="project-image">
+            </div>
+            <div class="topic">
+                <div class="topic-img-wrapper">
+                    <img src="https://www.hugochaume.com/wp-content/uploads/2017/09/react-logo.png" alt="javascript">
+                </div>
+                <h2 data-key="reactHeading"></h2>
+                <p data-key="reactParagraph"></p>
                 <div>
-                    <h2>22. Memory game</h2>
-                   <time datetime="2024-04-08">June 9, 2024</time>
+                    <img src="https://avatars.githubusercontent.com/u/88208912?v=4"  alt="DENNIS XHAFAJ">
+                    <p>Dennis Xhafaj</p>
                 </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/15-array/calculator-app/" target="_blank">
-                <img src="img/calculator.webp" alt="project15-preview" class="project-image">
-                <h2>21. Calculator App</h2>
-                <time datetime="2024-04-08">May 29, 2024</time>
-            </a>
-        </div>      
-        <div class="project">
-            <a href="side-projects/16-objects_and_json/shopping-cart/" target="_blank">
-                <img src="img/shopping_cart.webp" alt="project17-preview" class="project-image">
-               <div>
-                <h2>20. Shopping Cart</h2>
-                <time datetime="2024-04-08">May 19, 2024</time>
-               </div>
-            </a>
-        </div>  
-        <div class="project">
-            <a href="side-projects/14-traduttore/" target="_blank">
-                <img src="img/local-translator.webp" alt="project19-preview" class="project-image">
+            </div>
+            <div class="topic">
+                <div class="topic-img-wrapper">
+                    <img src="https://www.tshirtgeek.com.br/wp-content/uploads/2021/09/com037-scaled.jpg" alt="javascript">
+                </div>
+                <h2 data-key="sqlHeading"></h2>
+                <p data-key="sqlParagraph"></p>
                 <div>
-                    <h2>19. Local translator</h2>
-                    <time datetime="2024-04-08">May 12, 2024</time>
+                    <img src="https://avatars.githubusercontent.com/u/88208912?v=4"  alt="DENNIS XHAFAJ">
+                    <p>Dennis Xhafaj</p>
                 </div>
-            </a>
+            </div>
         </div>
-        <div class="project">
-            <a href="side-projects/16-objects_and_json/language-switcher/" target="_blank">
-                <img src="img/lang-swithcer.webp" alt="project18-preview" class="project-image">
-                <div>
-                    <h2>18. Language switcher with json</h2>
-                    <time datetime="2024-04-08">May 4, 2024</time>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/17-DOM_events/interactive-quiz/" target="_blank">
-                <img src="img/simple_quiz.webp" alt="project21-preview" class="project-image">
-                <div>
-                    <h2>17. Interactive quiz</h2>
-                    <time datetime="2024-04-08">April 29, 2024</time>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/17-DOM_events/cifrario/" target="_blank">
-                <img src="img/cifrario.png" alt="project21-preview" class="project-image">
-                <div>
-                    <h2>16. Cifrario</h2>
-                    <time datetime="2024-04-08">April 14, 2024</time>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/17-DOM_events/count-words/" target="_blank">
-                <img src="img/word_count.webp" alt="project20-preview" class="project-image">
-                <div>
-                    <h2>15. Word counter</h2>
-                    <time datetime="2024-04-08">April 8, 2024</time>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/15-array/todo-app/" target="_blank">
-                <img src="img/todo-app.webp" alt="project14-preview" class="project-image">
-                <h2>14. To-do App</h2>
-                <time datetime="2024-04-08">March 12, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/15-array/PUSH_REMOVE/" target="_blank">
-                <img src="img/add-remove-elem-from-array.webp" alt="project13-preview" class="project-image">
-                <h2>13. Push and remove elements from arrays</h2>
-                <time datetime="2024-04-08">March 5, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/13-GuessingGame/" target="_blank">
-                <img src="img/guessing_game.webp" alt="project12-preview" class="project-image">
-                <h2>12. Number guessing game</h2>
-                <time datetime="2024-04-08">February 28, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/11-LogicOperators/" target="_blank">
-                <img src="img/logic_operators.webp" alt="project11-preview" class="project-image">
-                <h2>11. Logic operators</h2>
-                <time datetime="2024-04-08">February 19, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/12-WhileLoops/" target="_blank">
-                <img src="img/elements_inapage.webp" alt="project10-preview" class="project-image">
-                <h2>10. While loops</h2>
-                <time datetime="2024-04-08">February 13, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/10-UnitConverter/" target="_blank">
-                <img src="img/unit_converter.webp" alt="project9-preview" class="project-image">
-                <h2>9. Unit Converter</h2>
-                <time datetime="2024-04-08">February 7, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/9-DarkMode/" target="_blank">
-                <img src="img/theme_switcher.webp" alt="project8-preview" class="project-image">
-                <h2>8. Theme switcher</h2>
-                <time datetime="2024-04-08">February 2, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/8-ChangingStyle/" target="_blank">
-                <img src="img/changing_styles.webp" alt="project7-preview" class="project-image">
-                <h2>7. Changing style</h2>
-                <time datetime="2024-04-08">January 25, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/7-AccessingAttributes/" target="_blank">
-                <img src="img/accessing_att.webp" alt="project6-preview" class="project-image">
-                <h2>6. Accessing Attributes</h2>
-                <time datetime="2024-04-08">January 23, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/6-UserInput/" target="_blank">
-                <h2>5. User Input</h2>
-                <time datetime="2024-04-08">January 17, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/5-assigningValues/" target="_blank">
-                <h2>4. Assigning values</h2>
-                <time datetime="2024-04-08">January 16, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/3-GetElementByTagName/" target="_blank">
-                <h2>3. GetElementByTagName</h2>
-                <time datetime="2024-04-08">January 16, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/2-QuerySelector/" target="_blank">
-                <h2>2. Query selectors</h2>
-                <time datetime="2024-04-08">January 15, 2024</time>
-            </a>
-        </div>
-        <div class="project">
-            <a href="side-projects/1-MessaggioSegreto/" target="_blank">
-                <h2>1. Messaggio Segreto</h2>
-                <time datetime="2024-04-08">January 13, 2024</time>
-            </a>
-        </div>        
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Dennis Xhafaj</p>
-        <div class="social-icons">
-            <a href="https://github.com/xaxoman" target="_blank"><img src="img/icone_varie/github.svg" alt="github"></a>
-            <a href="https://linkedin.com/in/dennis-xhafaj-b48a2528a" target="_blank"><img src="img/icone_varie/linkedin.svg" alt="linkedin"></a>
-            <a href="mailto:xhafaj.dennis@gmail.com"><img src="img/icone_varie/email.svg" alt="email"></a>
+    <footer>
+        <div class="footer-social">
+            <a target="_blank" href="https://github.com/xaxoman">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/dennis-xhafaj-0b1b3b1b4/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="mailto:xhafaj.dennis@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p> &copy; <script>document.write(new Date().getFullYear())</script> DENNIS XHAFAJ, All Rights Reserved.</p>
+        <div class="footer-user-toggle"> 
+            <!-- LANGUAGE TOGGLE AND THEME TOGGLE -->
+            <div id="footer-translate-toggle">
+                <i class="fas fa-globe"></i>
+                <select id="language-select">
+                    <option value="en">EN</option>
+                    <option value="it">IT</option>
+                </select>
+            </div>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
         </div>
     </footer>
- <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
