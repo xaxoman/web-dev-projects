@@ -1,13 +1,100 @@
 {
-  "introHeading": "Roadmap dello Sviluppatore",
-  "introParagraph": "Il tuo percorso strutturato per diventare uno sviluppatore full-stack. Scegli il tuo track di apprendimento e inizia subito.",
-  "searchPlaceholder": "Cerca una tecnologia...",
-  "javascriptHeading": "JavaScript",
-  "javascriptParagraph": "Padroneggia le basi della programmazione JavaScript",
-  "nodeHeading": "Node.js",
-  "nodeParagraph": "Crea applicazioni backend scalabili con Node.js",
-  "reactHeading": "React.js",
-  "reactParagraph": "Impara React moderno con hooks e buone pratiche",
-  "sqlHeading": "SQL",
-  "sqlParagraph": "Padroneggia i fondamenti di SQL e la progettazione di database"
+
+  "INTRO_PAGE": {
+    
+    "introHeading": "Roadmap dello Sviluppatore",
+    "introParagraph": "Il tuo percorso strutturato per diventare uno sviluppatore full-stack. Scegli il tuo track di apprendimento e inizia subito.",
+    "searchPlaceholder": "Cerca una tecnologia...",
+    
+    "javascriptHeading": "Roadmap di JavaScript",
+    "javascriptParagraph": "Padroneggia le basi della programmazione JavaScript",
+
+    "nodeHeading": "Node.js",
+    "nodeParagraph": "Crea applicazioni backend scalabili con Node.js",
+    
+    "reactHeading": "React.js",
+    "reactParagraph": "Impara React moderno con hooks e buone pratiche",
+    
+    "sqlHeading": "SQL",
+    "sqlParagraph": "Padroneggia i fondamenti di SQL e la progettazione di database"
+
+  },
+
+ 
+  "JAVASCRIPT_SECTION": {
+
+    "variablesAndDataTypes": "Variabili e Tipi di Dati",
+    "variablesAndDataTypesInfo": "Queste sono più informazioni su Variabili e Tipi di Dati",
+    "operators": "Operatori",
+    "operatorsInfo": "Spiegazione dettagliata sugli Operatori",
+    "controlStructures": "Strutture di Controllo",
+    "controlStructuresInfo": "Spiegazione dettagliata sulle Strutture di Controllo",
+    "functions": "Funzioni",
+    "functionsInfo": "Spiegazione dettagliata sulle Funzioni",
+    "arrays": "Array",
+    "arraysInfo": "Spiegazione dettagliata sugli Array",
+    "objects": "Oggetti",
+    "objectsInfo": "Spiegazione dettagliata sugli Oggetti",
+    "classes": "Classi",
+    "classesInfo": "Spiegazione dettagliata sulle Classi",
+    "domManipulation": "Manipolazione del DOM",
+    "domManipulationInfo": "Spiegazione dettagliata sulla Manipolazione del DOM"
+
+  },
+
+  "NODE_SECTION": {
+
+    "nodeModules": "Moduli Node.js",
+    "nodeModulesInfo": "Spiegazione dettagliata sui Moduli Node.js",
+    "express": "Express.js",
+    "expressInfo": "Spiegazione dettagliata su Express.js",
+    "restApi": "API REST",
+    "restApiInfo": "Spiegazione dettagliata sulle API REST",
+    "databases": "Database",
+    "databasesInfo": "Spiegazione dettagliata sui Database",
+    "authentication": "Autenticazione",
+    "authenticationInfo": "Spiegazione dettagliata sull'Autenticazione",
+    "deployment": "Deployment",
+    "deploymentInfo": "Spiegazione dettagliata sul Deployment"
+
+  },
+
+  "REACT_SECTION": {
+
+    "components": "Componenti",
+    "componentsInfo": "Spiegazione dettagliata sui Componenti",
+    "props": "Props",
+    "propsInfo": "Spiegazione dettagliata sulle Props",
+    "state": "Stato",
+    "stateInfo": "Spiegazione dettagliata sullo Stato",
+    "hooks": "Hooks",
+    "hooksInfo": "Spiegazione dettagliata sugli Hooks",
+    "contextApi": "API di Contesto",
+    "contextApiInfo": "Spiegazione dettagliata sull'API di Contesto",
+    "reactRouter": "React Router",
+    "reactRouterInfo": "Spiegazione dettagliata su React Router",
+    "redux": "Redux",
+    "reduxInfo": "Spiegazione dettagliata su Redux",
+    "testing": "Testing",
+    "testingInfo": "Spiegazione dettagliata sul Testing"
+
+  },
+
+  "SQL_SECTION": {
+
+    "sqlBasics": "Fondamenti di SQL",
+    "sqlBasicsInfo": "Spiegazione dettagliata sui Fondamenti di SQL",
+    "joins": "Join",
+    "joinsInfo": "Spiegazione dettagliata sui Join",
+    "aggregations": "Aggregazioni",
+    "aggregationsInfo": "Spiegazione dettagliata sulle Aggregazioni",
+    "subqueries": "Subquery",
+    "subqueriesInfo": "Spiegazione dettagliata sulle Subquery",
+    "normalization": "Normalizzazione",
+    "normalizationInfo": "Spiegazione dettagliata sulla Normalizzazione",
+    "indexes": "Indici",
+    "indexesInfo": "Spiegazione dettagliata sugli Indici"
+  }
+
+
 }

@@ -1,19 +1,3 @@
-// SEARCH BAR FUNCTIONALITY
-const search = document.getElementById('search');
-
-search.addEventListener('input', () => {
-    const query = search.value.toLowerCase();
-    document.querySelectorAll('.topic').forEach(topic => {
-        const headingText = topic.querySelector('h2').textContent.toLowerCase();
-        const paragraphText = topic.querySelector('p').textContent.toLowerCase();
-        if (headingText.includes(query) || paragraphText.includes(query)) {
-            topic.style.display = 'block';
-        } else {
-            topic.style.display = 'none';
-        }
-    });
-});
-
 // THEME TOGGLE FUNCTIONALITY
 const themeToggle = document.querySelectorAll('#theme-toggle i');
 
@@ -54,7 +38,7 @@ document.getElementById('language-select').addEventListener('change', function()
   });
   
   function loadTranslations(language) {
-    fetch(`locales/${language}.json`)
+    fetch(`../locales/${language}.json`)
         .then(response => response.json())
         .then(translations => {
             updateLanguage(translations);
@@ -92,3 +76,31 @@ document.getElementById('language-select').addEventListener('change', function()
   loadTranslations(savedLanguage);
 
 
+  // script per gli accordion
+  var acc = document.getElementsByClassName("accordion");
+  let arrow = document.querySelectorAll('.accordion img');
+  var i;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+      const accordions = document.querySelectorAll('.accordion');
+      
+      accordions.forEach(accordion => {
+          accordion.addEventListener('click', () => {
+              accordion.classList.toggle('active');
+              let panel = accordion.nextElementSibling;
+  
+               // make sure only the arrow of the clicked accordion rotates
+              let arrow = accordion.querySelector('img');
+              arrow.classList.toggle('rotate');
+              
+              while (panel && panel.classList.contains('panel')) {
+                  if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                  } else {
+                      panel.style.maxHeight = panel.scrollHeight + 'px';
+                  }
+                  panel = panel.nextElementSibling;
+              }
+          });
+      });
+  });
