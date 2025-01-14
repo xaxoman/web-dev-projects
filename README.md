@@ -1,13 +1,70 @@
+# Personal Portfolio
 
-## Topics the projects cover
+Benvenuti nel mio portfolio personale! Questo repository contiene una raccolta dei miei progetti di sviluppo web, che spaziano da semplici applicazioni JavaScript a progetti più complessi utilizzando React e Node.js.
 
-### Javascript
-    1.  variables, data-types, assignments
-    2. Conditions, nested-Conditions
-    3. While loops, for loops
-    4. Logic operators (AND, OR, NOT)
-    5. Arrays (push, remove, map, reduce, filter, sort...)
-    6. Objects and some JSON
-    7. API requests
+## Struttura del Progetto
+
+Il portfolio è organizzato in diverse sezioni, ognuna delle quali rappresenta un'area specifica dello sviluppo web. Ogni sezione contiene progetti che illustrano le mie competenze e conoscenze in quella particolare area.
+
+### JavaScript
+
+In questa sezione, troverete progetti che dimostrano l'uso di JavaScript per creare applicazioni web interattive. Gli argomenti trattati includono:
+
+1. Variabili e Tipi di Dati
+2. Condizioni e Cicli
+3. Operatori Logici
+4. Array e Metodi di Array
+5. Oggetti e JSON
+6. Richieste API
+
 ### React
-    1. 
+
+Questa sezione è dedicata ai progetti sviluppati utilizzando React, una libreria JavaScript per la creazione di interfacce utente. Gli argomenti trattati includono:
+
+1. Componenti
+2. Props e Stato
+3. Hooks
+4. Context API
+5. React Router
+6. Redux
+
+### Node.js
+
+In questa sezione, troverete progetti che utilizzano Node.js per creare applicazioni backend scalabili. Gli argomenti trattati includono:
+
+1. Moduli Node.js
+2. Express.js
+3. API REST
+4. Database
+5. Autenticazione
+6. Deployment
+
+## Progetti
+
+### [Emerson Telefonia](https://www.emersontelefonia.com)
+
+Un sito web per un fornitore di servizi di telefonia mobile. Il sito è progettato per essere user-friendly e facile da navigare. Include informazioni sull'azienda, i servizi offerti e come contattarli.
+
+### [Pizzeria King](web-dev/freelance/pizzeria-king/index.html)
+
+Un sito web per una pizzeria locale. Il sito include un menu, informazioni sul ristorante e recensioni dei clienti.
+
+### [LitisFun Project](web-dev/side-websites/LitisFun-Project/index.html)
+
+Un blog dedicato alla sicurezza informatica. Il sito include articoli su vari argomenti legati alla cybersecurity e suggerimenti su come proteggere la propria privacy online.
+
+## Contatti
+
+Per qualsiasi domanda o richiesta, non esitate a contattarmi tramite i seguenti canali:
+
+- [GitHub](https://github.com/xaxoman)
+- [LinkedIn](https://www.linkedin.com/in/dennis-xhafaj-0b1b3b1b4/)
+- Email: xhafaj.dennis@gmail.com
+
+## Licenza
+
+Questo progetto è distribuito sotto la licenza MIT. Per maggiori dettagli, consultare il file LICENSE.
+
+---
+
+Grazie per aver visitato il mio portfolio! Spero che i miei progetti vi piacciano e che possano dimostrare le mie competenze e la mia passione per lo sviluppo web.
