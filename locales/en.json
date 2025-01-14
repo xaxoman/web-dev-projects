@@ -15,29 +15,44 @@
 
   "JAVASCRIPT_SECTION": {
     "variablesAndDataTypes": "Variables and Data Types",
-    "variablesAndDataTypesInfo_1": "Show a secret message",
-    "variablesAndDataTypesInfo_2": "calculator app using variables",
+    "variablesAndDataTypesInfo_1": "Query Selector Example",
+    "variablesAndDataTypesInfo_2": "GetElementByTagName Example",
+    "variablesAndDataTypesInfo_3": "querySelectorAll Example",
+    "variablesAndDataTypesInfo_4": "Show a secret message: Click on the button to see the secret message",
+    "variablesAndDataTypesInfo_5": "Assigning Values using buttons",
+    "variablesAndDataTypesInfo_6": "Utilizing user input",
 
-    "operators": "Operators",
-    "operatorsInfo": "Detailed explanation about Operators",
+    "domManipulation": "Basic DOM Manipulation",
+    "domManipulationInfo_1": "Accessing tag attributes",
+    "domManipulationInfo_2": "Changing tag attributes and style",
+    "domManipulationInfo_3": "Theme Switcher",
 
-    "controlStructures": "Control Structures",
-    "controlStructuresInfo": "Detailed explanation about Control Structures",
+    "controlStructures": "Conditions and Logical Operators",
+    "controlStructuresInfo_1": "Basic Unit Converter",
+    "controlStructuresInfo_2": "Logic Operators Explained using a Bulb",
+    "controlStructuresInfo_3": "Number Guessing Game",
 
-    "functions": "Functions",
-    "functionsInfo": "Detailed explanation about Functions",
+    "loops": "Loops",
+    "loopsInfo": "Showing elements in the DOM using loops",
 
     "arrays": "Arrays",
-    "arraysInfo": "Detailed explanation about Arrays",
+    "arraysInfo_1": "Push and Remove Elements from an Array",
+    "arraysInfo_2": "Basic Array Methods",
+    "arraysInfo_3": "Simple Todo List",
+    "arraysInfo_4": "Calculator using Arrays",
+    "arraysInfo_5": "Memory Game",
 
-    "objects": "Objects",
-    "objectsInfo": "Detailed explanation about Objects",
+    "objectsAndJson": "Objects and JSON",
+    "objectsAndJsonInfo_1": "Simple JSON Lang Switcher",
+    "objectsAndJsonInfo_2": "Ecommerce Cart using JSON",
 
-    "classes": "Classes",
-    "classesInfo": "Detailed explanation about Classes",
+    "advancedDomEvents": "Advanced DOM Events",
+    "advancedDomEventsInfo_1": "Word Counter",
+    "advancedDomEventsInfo_2": "Caesar Cipher",
+    "advancedDomEventsInfo_3": "Interactive Quiz",
+    "advancedDomEventsInfo_4": "Pomodoro Timer",
+    "advancedDomEventsInfo_5": "Writing Speed Test"
 
-    "domManipulation": "DOM Manipulation",
-    "domManipulationInfo": "Detailed explanation about DOM Manipulation"
   },
 
   "NODE_SECTION": {

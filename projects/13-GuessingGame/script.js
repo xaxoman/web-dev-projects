@@ -22,8 +22,7 @@ function checkGuess() {
                 // mostra il messaggio di successo insieme al numero
                 show_attempts.style.display = "block";
                 show_attempts.style.color = "green";
-                show_attempts.innerHTML = "Congratulazioni! Il numero era " + rand_number;
-             
+                show_attempts.innerHTML = "Congratulazioni! Il numero era " + rand_number;            
 
             } 
             

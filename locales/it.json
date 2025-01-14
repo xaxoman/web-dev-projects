@@ -23,20 +23,27 @@
  
   "JAVASCRIPT_SECTION": {
 
-    "variablesAndDataTypes": "Variabili e Tipi di Dati",
+    "variablesAndDataTypes": "Variabili e Condizioni",
     "variablesAndDataTypesInfo": "Queste sono più informazioni su Variabili e Tipi di Dati",
+
     "operators": "Operatori",
     "operatorsInfo": "Spiegazione dettagliata sugli Operatori",
+    
     "controlStructures": "Strutture di Controllo",
     "controlStructuresInfo": "Spiegazione dettagliata sulle Strutture di Controllo",
+    
     "functions": "Funzioni",
     "functionsInfo": "Spiegazione dettagliata sulle Funzioni",
+    
     "arrays": "Array",
     "arraysInfo": "Spiegazione dettagliata sugli Array",
+    
     "objects": "Oggetti",
     "objectsInfo": "Spiegazione dettagliata sugli Oggetti",
+    
     "classes": "Classi",
     "classesInfo": "Spiegazione dettagliata sulle Classi",
+    
     "domManipulation": "Manipolazione del DOM",
     "domManipulationInfo": "Spiegazione dettagliata sulla Manipolazione del DOM"
 
