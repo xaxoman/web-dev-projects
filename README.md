@@ -39,19 +39,6 @@ In questa sezione, troverete progetti che utilizzano Node.js per creare applicaz
 5. Autenticazione
 6. Deployment
 
-## Progetti
-
-### [Emerson Telefonia](https://www.emersontelefonia.com)
-
-Un sito web per un fornitore di servizi di telefonia mobile. Il sito è progettato per essere user-friendly e facile da navigare. Include informazioni sull'azienda, i servizi offerti e come contattarli.
-
-### [Pizzeria King](web-dev/freelance/pizzeria-king/index.html)
-
-Un sito web per una pizzeria locale. Il sito include un menu, informazioni sul ristorante e recensioni dei clienti.
-
-### [LitisFun Project](web-dev/side-websites/LitisFun-Project/index.html)
-
-Un blog dedicato alla sicurezza informatica. Il sito include articoli su vari argomenti legati alla cybersecurity e suggerimenti su come proteggere la propria privacy online.
 
 ## Contatti
 
