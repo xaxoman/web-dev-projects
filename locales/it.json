@@ -24,29 +24,47 @@
   "JAVASCRIPT_SECTION": {
 
     "variablesAndDataTypes": "Variabili e Condizioni",
-    "variablesAndDataTypesInfo": "Queste sono più informazioni su Variabili e Tipi di Dati",
+    "variablesAndDataTypesInfo_1": "Esempio di Query Selector",
+    "variablesAndDataTypesInfo_2": "Esempio di GetElementByTagName",
+    "variablesAndDataTypesInfo_3": "Esempio di querySelectorAll",
+    "variablesAndDataTypesInfo_4": "Mostra un messaggio segreto: Clicca sul pulsante per vedere il messaggio segreto",
+    "variablesAndDataTypesInfo_5": "Assegnazione di valori usando i pulsanti",
+    "variablesAndDataTypesInfo_6": "Utilizzo dell'input dell'utente",
 
-    "operators": "Operatori",
-    "operatorsInfo": "Spiegazione dettagliata sugli Operatori",
-    
-    "controlStructures": "Strutture di Controllo",
-    "controlStructuresInfo": "Spiegazione dettagliata sulle Strutture di Controllo",
-    
-    "functions": "Funzioni",
-    "functionsInfo": "Spiegazione dettagliata sulle Funzioni",
-    
+    "domManipulation": "Manipolazione di base del DOM",
+    "domManipulationInfo_1": "Accesso agli attributi dei tag",
+    "domManipulationInfo_2": "Modifica degli attributi e dello stile dei tag",
+    "domManipulationInfo_3": "Cambia tema",
+
+    "controlStructures": "Condizioni e Operatori Logici",
+    "controlStructuresInfo_1": "Convertitore di unità di base",
+    "controlStructuresInfo_2": "Operatori logici spiegati usando una lampadina",
+    "controlStructuresInfo_3": "Gioco di indovinare il numero",
+
+    "loops": "Cicli",
+    "loopsInfo": "Mostrare elementi nel DOM usando i cicli",
+
     "arrays": "Array",
-    "arraysInfo": "Spiegazione dettagliata sugli Array",
-    
-    "objects": "Oggetti",
-    "objectsInfo": "Spiegazione dettagliata sugli Oggetti",
-    
-    "classes": "Classi",
-    "classesInfo": "Spiegazione dettagliata sulle Classi",
-    
-    "domManipulation": "Manipolazione del DOM",
-    "domManipulationInfo": "Spiegazione dettagliata sulla Manipolazione del DOM"
+    "arraysInfo_1": "Aggiungi e rimuovi elementi da un array",
+    "arraysInfo_2": "Metodi di base degli array",
+    "arraysInfo_3": "Lista di cose da fare semplice",
+    "arraysInfo_4": "Calcolatrice usando gli array",
+    "arraysInfo_5": "Gioco di memoria",
 
+    "objectsAndJson": "Oggetti e JSON",
+    "objectsAndJsonInfo_1": "Interruttore di lingua JSON semplice",
+    "objectsAndJsonInfo_2": "Carrello ecommerce usando JSON",
+
+    "advancedDomEvents": "Eventi DOM avanzati",
+    "advancedDomEventsInfo_1": "Contatore di parole",
+    "advancedDomEventsInfo_2": "Cifrario di Cesare",
+    "advancedDomEventsInfo_3": "Quiz interattivo",
+    "advancedDomEventsInfo_4": "Timer Pomodoro",
+    "advancedDomEventsInfo_5": "Test di velocità di scrittura",
+
+    "classes": "Classi",
+    "classesInfo_1": "Sistema di gestione della biblioteca",
+    "classesInfo_2": "Tracker delle spese con grafico"
   },
 
   "NODE_SECTION": {
