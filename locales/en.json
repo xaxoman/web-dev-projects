@@ -55,8 +55,12 @@
 
     "classes": "Classes",
     "classesInfo_1": "Library Management System",
-    "classesInfo_2": "Expense Tracker with graph"
+    "classesInfo_2": "Expense Tracker with graph",
 
+    "filesAndApi": "File System access Api",
+    "filesAndApiInfo_1": "Simple text file creator",
+    "filesAndApiInfo_2": "Text editor",
+    "filesAndApiInfo_3": "File metadata reader"
   },
 
   "NODE_SECTION": {
