@@ -1,0 +1,167 @@
+/* STYLE FOR THE TOPICS  */
+
+body.light-theme .topic-wrapper {
+    max-width: 57rem;
+    margin: 0 auto;
+}
+
+body.light-theme .topic-intro h1 {
+    font-size: 2.3rem;
+    color: var(--light-white-default);
+    margin-top: 2rem;
+    margin-bottom: -0.5rem;
+}
+
+body.light-theme .topic-intro p {
+    font-size: 1.3rem;
+    color: var(--light-borders);
+    margin-bottom: 2rem;
+}
+
+body.light-theme .topic-arguments {
+    border: 1px solid var(--light-second-border);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+body.light-theme .topic-arguments p {
+    color: var(--light-white-default) !important;
+    font-size: 1.1rem !important;
+}
+
+
+body.light-theme .accordion:hover {
+    background-color: rgb(215, 215, 215);
+    transition: all 0.3s;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+
+body.light-theme .accordion img {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.5rem;
+    filter: invert(0.7);
+    transition: all 0.3s;
+}
+
+
+body.light-theme .panel p {
+    padding: 3rem 0rem;
+    font-size: 1rem !important;
+    color: var(--light-borders) !important;
+}
+
+body.light-theme .panel a {
+    color: var(--light-white-default);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+
+.topic-wrapper {
+
+    max-width: 57rem;
+    margin: 0 auto;
+ }
+ 
+ .topic-intro h1 {
+ 
+     font-size: 2.3rem;
+     color: var(--white-default);
+     margin-top: 2rem;
+     margin-bottom: -0.5rem;
+ }
+ 
+ .topic-intro p {
+ 
+     font-size: 1.3rem;
+     color: var(--borders);
+     margin-bottom: 2rem;
+ }
+ 
+ 
+ /* ARGOMENTI */
+ 
+ .topic-arguments {
+ 
+     border: 1px solid var(--second-border);
+     border-radius: var(--radius);
+     padding: 1rem;
+ }
+ 
+ .topic-arguments p {
+     
+     color: var(--white-default) !important;
+     font-size: 1.1rem !important;   
+     
+ }
+ 
+ .topic-arguments div {
+ 
+     display: flex;
+     align-items: center;
+     transition: all 0.3s;
+     justify-content: space-between;
+     padding: 0rem 0.5rem;
+ }
+ 
+ .accordion:hover {
+     
+     background-color: var(--second-border);
+     transition: all 0.3s;
+     border-radius: var(--radius);
+     cursor: pointer;
+ }
+ 
+ .accordion img {
+ 
+     width: 1.75rem;
+     height: 1.75rem;
+     margin-right: 0.5rem;
+     filter: invert(0.7);
+     transition: all 0.3s;
+ }
+ 
+ .accordion-active {
+     
+     display: block;
+     
+ }
+ 
+ .panel {
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.3s ease-out;
+
+ }
+
+ .panel p {
+     padding: 3rem 0rem;
+     font-size: 1rem !important;
+    color: var(--borders) !important;
+ }
+
+    .panel a {
+        color: var(--white-default);
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+ .panel a img {
+     width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+    filter: invert(0.7);
+}
+
+ .rotate {
+
+    transform: rotate(90deg);
+    transition: all 0.3s;
+ }
+
+
+

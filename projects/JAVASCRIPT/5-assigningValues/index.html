@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigning values with shorthands</title>
+</head>
+<body>
+    <h1>Wallet: $<span id="wallet">0</span></h1>
+    <button onclick="add()">Add 1$</button>
+    <button onclick="remove()">Remove 1$</button>
+    
+    <script>
+        let wallet = 0;
+        const walletElement = document.getElementById('wallet');
+
+        function add() {
+            wallet++;
+            walletElement.innerHTML = wallet;
+        }
+
+        function remove() {
+            wallet--;
+            walletElement.innerHTML = wallet; 
+        }
+    </script>
+</body>
+</html>

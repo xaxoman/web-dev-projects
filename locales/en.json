@@ -1,0 +1,114 @@
+{
+  "INTRO_PAGE": {
+    "introHeading": "Developer Roadmap",
+    "introParagraph": "Your structured path to becoming a full-stack developer. Choose your learning track and start your journey.",
+    "searchPlaceholder": "Search for a technology...",
+    "javascriptHeading": "JavaScript Roadmap",
+    "javascriptParagraph": "Master the fundamentals of JavaScript programming",
+    "nodeHeading": "Node.js",
+    "nodeParagraph": "Build scalable backend applications with Node.js",
+    "reactHeading": "React.js",
+    "reactParagraph": "Learn modern React with hooks and best practices",
+    "sqlHeading": "SQL",
+    "sqlParagraph": "Master the fundamentals of SQL and database design"
+  },
+
+  "JAVASCRIPT_SECTION": {
+    "variablesAndDataTypes": "Variables and Data Types",
+    "variablesAndDataTypesInfo_1": "Query Selector Example",
+    "variablesAndDataTypesInfo_2": "GetElementByTagName Example",
+    "variablesAndDataTypesInfo_3": "querySelectorAll Example",
+    "variablesAndDataTypesInfo_4": "Show a secret message: Click on the button to see the secret message",
+    "variablesAndDataTypesInfo_5": "Assigning Values using buttons",
+    "variablesAndDataTypesInfo_6": "Utilizing user input",
+
+    "domManipulation": "Basic DOM Manipulation",
+    "domManipulationInfo_1": "Accessing tag attributes",
+    "domManipulationInfo_2": "Changing tag attributes and style",
+    "domManipulationInfo_3": "Theme Switcher",
+
+    "controlStructures": "Conditions and Logical Operators",
+    "controlStructuresInfo_1": "Basic Unit Converter",
+    "controlStructuresInfo_2": "Logic Operators Explained using a Bulb",
+    "controlStructuresInfo_3": "Number Guessing Game",
+
+    "loops": "Loops",
+    "loopsInfo": "Showing elements in the DOM using loops",
+
+    "arrays": "Arrays",
+    "arraysInfo_1": "Push and Remove Elements from an Array",
+    "arraysInfo_2": "Basic Array Methods",
+    "arraysInfo_3": "Simple Todo List",
+    "arraysInfo_4": "Calculator using Arrays",
+    "arraysInfo_5": "Memory Game",
+
+    "objectsAndJson": "Objects and JSON",
+    "objectsAndJsonInfo_1": "Simple JSON Lang Switcher",
+    "objectsAndJsonInfo_2": "Ecommerce Cart using JSON",
+
+    "advancedDomEvents": "Advanced DOM Events",
+    "advancedDomEventsInfo_1": "Word Counter",
+    "advancedDomEventsInfo_2": "Caesar Cipher",
+    "advancedDomEventsInfo_3": "Interactive Quiz",
+    "advancedDomEventsInfo_4": "Pomodoro Timer",
+    "advancedDomEventsInfo_5": "Writing Speed Test",
+
+    "classes": "Classes",
+    "classesInfo_1": "Library Management System",
+    "classesInfo_2": "Expense Tracker with graph",
+
+    "filesAndApi": "File System access Api",
+    "filesAndApiInfo_1": "Simple text file creator",
+    "filesAndApiInfo_2": "Text editor",
+    "filesAndApiInfo_3": "File metadata reader"
+  },
+
+  "NODE_SECTION": {
+    "nodeModules": "Node.js Modules",
+    "nodeModulesInfo": "Detailed explanation about Node.js Modules",
+    "express": "Express.js",
+    "expressInfo": "Detailed explanation about Express.js",
+    "restApi": "REST API",
+    "restApiInfo": "Detailed explanation about REST API",
+    "databases": "Databases",
+    "databasesInfo": "Detailed explanation about Databases",
+    "authentication": "Authentication",
+    "authenticationInfo": "Detailed explanation about Authentication",
+    "deployment": "Deployment",
+    "deploymentInfo": "Detailed explanation about Deployment"
+  },
+
+  "REACT_SECTION": {
+    "components": "Components",
+    "componentsInfo": "Detailed explanation about Components",
+    "props": "Props",
+    "propsInfo": "Detailed explanation about Props",
+    "state": "State",
+    "stateInfo": "Detailed explanation about State",
+    "hooks": "Hooks",
+    "hooksInfo": "Detailed explanation about Hooks",
+    "contextApi": "Context API",
+    "contextApiInfo": "Detailed explanation about Context API",
+    "reactRouter": "React Router",
+    "reactRouterInfo": "Detailed explanation about React Router",
+    "redux": "Redux",
+    "reduxInfo": "Detailed explanation about Redux",
+    "testing": "Testing",
+    "testingInfo": "Detailed explanation about Testing"
+  },
+
+  "SQL_SECTION": {
+    "sqlBasics": "SQL Basics",
+    "sqlBasicsInfo": "Detailed explanation about SQL Basics",
+    "joins": "Joins",
+    "joinsInfo": "Detailed explanation about Joins",
+    "aggregations": "Aggregations",
+    "aggregationsInfo": "Detailed explanation about Aggregations",
+    "subqueries": "Subqueries",
+    "subqueriesInfo": "Detailed explanation about Subqueries",
+    "normalization": "Normalization",
+    "normalizationInfo": "Detailed explanation about Normalization",
+    "indexes": "Indexes",
+    "indexesInfo": "Detailed explanation about Indexes"
+  }
+}

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #003f7e;
+    color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+
+    font-size: 4rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 5rem;
+}
+
+.container {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 18rem;
+   margin: 0 auto;
+}
+
+.container input {
+
+    border: 0;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+#task, #date {
+
+    width: 100%;
+}
+
+.container button {
+
+    border: 0;
+    background-color: whitesmoke;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container button:hover {
+
+    transition: 0.3s;
+    transform: scale(0.95);
+}
+
+.container input, button {
+
+    border-radius: 0.3rem;
+}
+
+.container p {
+
+   display: flex;
+   justify-content: center;
+}
+
+.tasks-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    width: 18rem;
+    margin-top: 1rem !important;
+    margin: 0 auto;
+   
+}
+
+
+
+.completed_tasks_container {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;    
+}
+
+h2 {
+
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+
+.dashboard {
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard button {
+
+    background-color: transparent;
+    color: white;
+   display: flex;
+   flex-direction: column;
+}
+
+.dashboard i {
+
+    font-size: 1rem;
+   margin: 0 auto;
+    border: 0;
+    padding: 0.5rem;
+    
+}
+
+.submit {
+
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.2rem;
+}
+
+.time {
+
+    display: flex;
+    max-width: 18rem;
+}
+
+.time input:first-child {
+
+    margin-right: 0.7rem;
+    padding-right: 3rem;
+}
+
+.date-time-container {
+
+ display: flex;
+font-weight: bold;
+letter-spacing: 0.1rem;
+}
+
+
