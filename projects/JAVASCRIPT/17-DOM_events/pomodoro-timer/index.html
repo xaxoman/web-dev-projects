@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+   <div id="pomodoro-container">
+    <div class="title">
+        <p>Pomodoro</p>
+        <img src="https://www.svgrepo.com/show/407629/tomato.svg" alt="pomodoro">
+        <p>Timer</p>
+    </div>
+    <div class="misc-buttons">
+        <button id="work">Pomodoro</button>
+        <button id="short">Short Break</button>
+        <button id="long">Long break</button>
+    </div>
+    <span id="time"></span>
+   <div style="display: flex; align-items: center; justify-content: center;">
+    <button id="start" onclick="updateTimer()">START</button>
+    <button id="reset">
+        <i class="fas fa-redo"></i>
+    </button>
+   </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea file di testo</title>
+</head>
+<!-- Prompt the user for a filename and content, then create it locally with the File System Access API. -->
+<body>
+    <h1>Crea file di testo</h1>
+    <form>
+        <label for="filename">Nome del file:</label>
+        <input type="text" id="filename" name="filename" required>
+        <label for="content">Contenuto:</label>
+        <textarea id="content" name="content" required></textarea>
+        <button type="submit">Crea file</button>
+    </form>
+    <p id="status"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

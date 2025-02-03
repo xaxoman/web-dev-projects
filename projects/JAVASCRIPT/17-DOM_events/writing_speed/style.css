@@ -1,0 +1,108 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: #1e7fff;
+}
+
+.project-container {
+
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+h1 {
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+.project-container > p{
+
+    text-align: center;
+  color: aliceblue;
+  margin: 0.5rem 0rem;
+  font-size: 1.1rem;
+}
+
+textarea {
+
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+textarea::placeholder {
+
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.06rem;
+    font-size: 1rem;
+}
+
+textarea:focus {
+
+    outline: none;
+    box-shadow: 0 0 0.3rem 0.1rem #003f91a9;
+    transition: 0.2s;
+}
+
+#results {
+
+    font-size: 1.2rem;
+}
+
+#random-phrase {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(214, 214, 214);
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+button {
+
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    background-color: #003f91;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+
+}
+
+button:hover {
+
+    background-color: #002f6c;
+    transition: 0.3s;
+}
+
+button:active {
+
+    background-color: #001f4c;
+    transition: 0.3s;
+}
