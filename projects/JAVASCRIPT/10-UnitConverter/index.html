@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit converter</title>
+    <style>
+        body {
+
+            background-color: rgb(168, 241, 241);
+            margin: 0 auto;
+            max-width: 40rem;
+        }
+        
+        h1 {
+
+            background-color: white;
+            border-radius: 0.3rem;
+            padding: 2rem;
+        }
+        
+        p {
+
+            background-color: deeppink;
+            color: white;
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unit converter</h1>
+    <input id="userInput" type="number" placeholder="Enter a number">
+    <select name="options">
+        <option id="milesKilometer" value="milesKilometer">Miles to kilometers</option>
+        <option id="KilometerMiles" value="KilometerMiles">kilometers to miles</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+    <p>Result: <span id="converted">0</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
