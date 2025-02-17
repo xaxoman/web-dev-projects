@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di meme random</title>
+</head>
+<body>
+    <!-- 
+        ### **1️⃣ Meme Generator (Using External API)**
+
+        📌 **Concepts Used**: Express routing, query params, API calls
+
+        🔹 **Description**: Users can enter text, and the app fetches a random meme template from an API and overlays their text.
+
+        🔹 **API**: Imgflip Meme API
+        
+        **Example**:
+
+        /meme?top=Hello&bottom=World` → Returns a meme with "Hello" on top and "World" at the bottom.
+    -->
+
+        <div class="container">
+            <img class="meme_gif" src="https://media.tenor.com/_1hMqyFC4LEAAAAM/pop-cat.gif" alt="pop cat meme">
+            <h1>Generatore di meme random</h1>
+            <input id="meme_text_top" placeholder="Inserisci il testo soprastante del meme" type="text" required>
+            <input id="meme_text_bottom" placeholder="Inserisci il testo sottostante del meme" type="text" required>
+            <button onclick="generaMeme()">Genera il meme</button>
+            <img src="#" id="meme" alt="meme_placeholder">
+        </div>
+
+        <!-- 
+            application/js is obsolete but it's used to  
+            prevent mime type error, we should use text/javascript which is standard
+        -->
+            <script>
+                async function generaMeme() {
+                    const text_top = document.getElementById("meme_text_top").value;
+                    const text_bottom = document.getElementById("meme_text_bottom").value;
+
+                    try {
+                        const response = await fetch(`/api/meme?top=${text_top}&bottom=${text_bottom}`);
+                        const data = await response.json();
+                        const meme_placeholder = document.getElementById('meme'); 
+
+                        meme_placeholder.style.display = 'block';
+                        meme_placeholder.src = data.meme;
+                    
+                    } catch (error) {
+                        document.getElementById('meme').innerText = 'Oops! fetch del meme non riuscito.';
+                        console.error(error);
+                    }
+                }
+            </script>
+     <!-- spiega: mettiamo text/jacascript nonostante l'errore MIME perché application/js è deprecato -->
+     <script type="text/javascript" src="../index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di battute random</title>
+</head>
+<body>
+    <div class="container">
+       <div style="display: flex; font-size: 2rem;">
+        🎉
+        🤣
+        🎉
+       </div>
+        <h1>Generatore di battute random</h1>
+        <div class="joke-container">
+            <p id="joke"></p>
+            <label for="category">Categoria</label>
+            <select id="category">
+                <option value="Any">Qualsiasi</option>
+                <option value="Misc">Varie</option>
+                <option value="Programming">Programmazione</option>
+                <option value="Pun">Barzellette</option>
+                <option value="Spooky">Spaventose</option>
+                <option value="Christmas">Natalizie</option>
+            </select>
+            <button onclick="getJoke()" id="jokeBtn">Genera battuta</button>
+        </div>
+    </div>
+    <script>       
+        async function getJoke() {
+            const category = document.getElementById('category').value;
+            try {
+                const response = await fetch(`/api/joke?category=${category}`); // Pass the selected category
+                const data = await response.json();
+                document.getElementById('joke').innerText = data.joke;
+            } catch (error) {
+                document.getElementById('joke').innerText = 'Oops! Could not fetch a joke.';
+                console.error(error);
+            }
+        }
+    </script>
+
+     <script src="../index.js"></script>
+</body>
+</html>
