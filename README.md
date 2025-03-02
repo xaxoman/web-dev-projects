@@ -53,7 +53,7 @@ Server-side applications demonstrating:
 - Deployment strategies
 
 ### SQL
-![SQL](https://skillicons.dev/icons?i=sql)
+![SQL](https://skillicons.dev/icons?i=mysql)
 
 Database projects covering:
 - SQL basics and syntax
