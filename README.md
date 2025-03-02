@@ -1,57 +1,71 @@
-# Personal Portfolio
+# Dennis Xhafaj - Web Development Portfolio
 
-Benvenuti nel mio portfolio personale! Questo repository contiene una raccolta dei miei progetti di sviluppo web, che spaziano da semplici applicazioni JavaScript a progetti più complessi utilizzando React e Node.js.
+[![GitHub](https://img.shields.io/badge/GitHub-xaxoman-181717?style=for-the-badge&logo=github)](https://github.com/xaxoman)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dennis%20Xhafaj-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dennis-xhafaj-0b1b3b1b4/)
+[![Email](https://img.shields.io/badge/Email-xhafaj.dennis%40gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:xhafaj.dennis@gmail.com)
 
-## Struttura del Progetto
+## 📚 Overview
 
-Il portfolio è organizzato in diverse sezioni, ognuna delle quali rappresenta un'area specifica dello sviluppo web. Ogni sezione contiene progetti che illustrano le mie competenze e conoscenze in quella particolare area.
+Welcome to my web development portfolio! This repository showcases my projects and skills across various web development technologies, from frontend to backend. Browse through my work to see my capabilities and coding style.
+
+## 🛠️ Technologies
+
+- **Frontend**: HTML, CSS, JavaScript, React
+- **Backend**: Node.js, Express
+- **Database**: MySQL
+- **Tools**: Git, npm, Webpack
+
+## 🗂️ Project Categories
 
 ### JavaScript
+![JavaScript](./img/js_logo.png)
 
-In questa sezione, troverete progetti che dimostrano l'uso di JavaScript per creare applicazioni web interattive. Gli argomenti trattati includono:
-
-1. Variabili e Tipi di Dati
-2. Condizioni e Cicli
-3. Operatori Logici
-4. Array e Metodi di Array
-5. Oggetti e JSON
-6. Richieste API
+A collection of JavaScript projects demonstrating core concepts and practical applications:
+- DOM manipulation
+- Data structures (arrays, objects)
+- Event handling
+- API interactions
+- File operations
+- OOP with classes
+- Interactive web applications
 
 ### React
+![React](./img/react_logo.png)
 
-Questa sezione è dedicata ai progetti sviluppati utilizzando React, una libreria JavaScript per la creazione di interfacce utente. Gli argomenti trattati includono:
-
-1. Componenti
-2. Props e Stato
-3. Hooks
-4. Context API
-5. React Router
-6. Redux
+Projects showcasing React framework expertise:
+- Component development
+- Props and state management
+- Hooks implementation
+- Context API usage
+- React Router navigation
+- Redux state management
+- Testing practices
 
 ### Node.js
+![Node.js](./img/node_logo.png)
 
-In questa sezione, troverete progetti che utilizzano Node.js per creare applicazioni backend scalabili. Gli argomenti trattati includono:
+Server-side applications demonstrating:
+- Node modules
+- Express framework implementation
+- RESTful API creation
+- Database integrations
+- Authentication systems
+- Deployment strategies
 
-1. Moduli Node.js
-2. Express.js
-3. API REST
-4. Database
-5. Autenticazione
-6. Deployment
+### SQL
+![SQL](./img/sql_logo.png)
 
+Database projects covering:
+- SQL basics and syntax
+- Join operations
+- Data aggregation
+- Subquery techniques
+- Normalization principles
+- Index optimization
 
-## Contatti
+## 🌐 Multilingual Support
 
-Per qualsiasi domanda o richiesta, non esitate a contattarmi tramite i seguenti canali:
+This portfolio is available in multiple languages:
+- 🇬🇧 English
+- 🇮🇹 Italian
 
-- [GitHub](https://github.com/xaxoman)
-- [LinkedIn](https://www.linkedin.com/in/dennis-xhafaj-0b1b3b1b4/)
-- Email: xhafaj.dennis@gmail.com
-
-## Licenza
-
-Questo progetto è distribuito sotto la licenza MIT. Per maggiori dettagli, consultare il file LICENSE.
-
----
-
-Grazie per aver visitato il mio portfolio! Spero che i miei progetti vi piacciano e che possano dimostrare le mie competenze e la mia passione per lo sviluppo web.
