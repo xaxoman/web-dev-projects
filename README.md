@@ -18,7 +18,7 @@ Welcome to my web development portfolio! This repository showcases my projects a
 ## 🗂️ Project Categories
 
 ### JavaScript
-![JavaScript](./img/js_logo.png)
+![JavaScript](https://skillicons.dev/icons?i=js)
 
 A collection of JavaScript projects demonstrating core concepts and practical applications:
 - DOM manipulation
@@ -30,7 +30,7 @@ A collection of JavaScript projects demonstrating core concepts and practical ap
 - Interactive web applications
 
 ### React
-![React](./img/react_logo.png)
+![React](https://skillicons.dev/icons?i=react)
 
 Projects showcasing React framework expertise:
 - Component development
@@ -42,7 +42,7 @@ Projects showcasing React framework expertise:
 - Testing practices
 
 ### Node.js
-![Node.js](./img/node_logo.png)
+![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express)
 
 Server-side applications demonstrating:
 - Node modules
@@ -53,7 +53,7 @@ Server-side applications demonstrating:
 - Deployment strategies
 
 ### SQL
-![SQL](./img/sql_logo.png)
+![SQL](https://skillicons.dev/icons?i=sql)
 
 Database projects covering:
 - SQL basics and syntax
