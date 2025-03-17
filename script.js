@@ -86,8 +86,8 @@ document.getElementById('language-select').addEventListener('change', function()
     });
   }
   
-  // Load saved language preference or default to 'en'
-  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  // Load saved language preference or default to 'it'
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'it';
   document.getElementById('language-select').value = savedLanguage;
   loadTranslations(savedLanguage);
 

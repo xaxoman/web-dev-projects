@@ -1,125 +1,124 @@
 {
-
   "INTRO_PAGE": {
-    
-    "introHeading": "Roadmap dello Sviluppatore",
-    "introParagraph": "Il tuo percorso strutturato per diventare uno sviluppatore full-stack. Scegli il tuo track di apprendimento e inizia subito.",
-    "searchPlaceholder": "Cerca una tecnologia...",
-    
-    "javascriptHeading": "Roadmap di JavaScript",
-    "javascriptParagraph": "Padroneggia le basi della programmazione JavaScript",
-
-    "nodeHeading": "Node.js",
-    "nodeParagraph": "Crea applicazioni backend scalabili con Node.js",
-    
-    "reactHeading": "React.js",
-    "reactParagraph": "Impara React moderno con hooks e buone pratiche",
-    
-    "sqlHeading": "SQL",
-    "sqlParagraph": "Padroneggia i fondamenti di SQL e la progettazione di database"
-
+    "introHeading": "Portfolio Web Developer",
+    "introParagraph": "Benvenuto nel mio portfolio che mostra progetti su varie tecnologie. Esplora i miei lavori in diversi linguaggi di programmazione e framework.",
+    "searchPlaceholder": "Cerca un progetto o una tecnologia...",
+    "javascriptHeading": "Progetti JavaScript",
+    "javascriptParagraph": "Applicazioni web interattive costruite con JavaScript",
+    "nodeHeading": "Progetti Node.js",
+    "nodeParagraph": "Applicazioni backend e API sviluppate con Node.js",
+    "reactHeading": "Progetti React.js",
+    "reactParagraph": "Applicazioni UI moderne costruite con React e il suo ecosistema",
+    "sqlHeading": "Progetti SQL",
+    "sqlParagraph": "Progetti di progettazione e implementazione di database"
   },
 
- 
   "JAVASCRIPT_SECTION": {
+    "variablesAndDataTypes": "Progetti di Manipolazione DOM",
+    "variablesAndDataTypesInfo_1": "Demo Query Selector",
+    "variablesAndDataTypesInfo_2": "Implementazione GetElementByTagName",
+    "variablesAndDataTypesInfo_3": "Esempio Interattivo querySelectorAll",
+    "variablesAndDataTypesInfo_4": "Rivelatore di Messaggi Segreti",
+    "variablesAndDataTypesInfo_5": "Assegnazione Dinamica di Valori",
+    "variablesAndDataTypesInfo_6": "Processore di Input Utente",
 
-    "variablesAndDataTypes": "Variabili e Condizioni",
-    "variablesAndDataTypesInfo_1": "Esempio di Query Selector",
-    "variablesAndDataTypesInfo_2": "Esempio di GetElementByTagName",
-    "variablesAndDataTypesInfo_3": "Esempio di querySelectorAll",
-    "variablesAndDataTypesInfo_4": "Mostra un messaggio segreto: Clicca sul pulsante per vedere il messaggio segreto",
-    "variablesAndDataTypesInfo_5": "Assegnazione di valori usando i pulsanti",
-    "variablesAndDataTypesInfo_6": "Utilizzo dell'input dell'utente",
+    "domManipulation": "Progetti di Manipolazione Elementi",
+    "domManipulationInfo_1": "Strumento di Accesso agli Attributi",
+    "domManipulationInfo_2": "Modificatore Dinamico di Stile",
+    "domManipulationInfo_3": "Applicazione Cambio Tema",
 
-    "domManipulation": "Manipolazione di base del DOM",
-    "domManipulationInfo_1": "Accesso agli attributi dei tag",
-    "domManipulationInfo_2": "Modifica degli attributi e dello stile dei tag",
-    "domManipulationInfo_3": "Cambia tema",
+    "controlStructures": "Applicazioni Basate sulla Logica",
+    "controlStructuresInfo_1": "Strumento di Conversione Unità",
+    "controlStructuresInfo_2": "Visualizzatore Interattivo di Logica",
+    "controlStructuresInfo_3": "Gioco Indovina il Numero",
 
-    "controlStructures": "Condizioni e Operatori Logici",
-    "controlStructuresInfo_1": "Convertitore di unità di base",
-    "controlStructuresInfo_2": "Operatori logici spiegati usando una lampadina",
-    "controlStructuresInfo_3": "Gioco di indovinare il numero",
+    "loops": "Progetti di Iterazione",
+    "loopsInfo": "Generatore Dinamico di Elementi DOM",
 
-    "loops": "Cicli",
-    "loopsInfo": "Mostrare elementi nel DOM usando i cicli",
+    "arrays": "Applicazioni Basate su Array",
+    "arraysInfo_1": "Strumento di Manipolazione Array",
+    "arraysInfo_2": "Mostra dei Metodi Array",
+    "arraysInfo_3": "Applicazione Lista delle Cose da Fare",
+    "arraysInfo_4": "Calcolatrice basata su Array",
+    "arraysInfo_5": "Gioco di Memoria",
 
-    "arrays": "Array",
-    "arraysInfo_1": "Aggiungi e rimuovi elementi da un array",
-    "arraysInfo_2": "Metodi di base degli array",
-    "arraysInfo_3": "Lista di cose da fare semplice",
-    "arraysInfo_4": "Calcolatrice usando gli array",
-    "arraysInfo_5": "Gioco di memoria",
+    "objectsAndJson": "Progetti di Strutture Dati",
+    "objectsAndJsonInfo_1": "Selettore di Lingua JSON",
+    "objectsAndJsonInfo_2": "Simulatore Carrello E-commerce",
 
-    "objectsAndJson": "Oggetti e JSON",
-    "objectsAndJsonInfo_1": "Interruttore di lingua JSON semplice",
-    "objectsAndJsonInfo_2": "Carrello ecommerce usando JSON",
-
-    "advancedDomEvents": "Eventi DOM avanzati",
-    "advancedDomEventsInfo_1": "Contatore di parole",
-    "advancedDomEventsInfo_2": "Cifrario di Cesare",
-    "advancedDomEventsInfo_3": "Quiz interattivo",
+    "advancedDomEvents": "Applicazioni Event-Driven",
+    "advancedDomEventsInfo_1": "Strumento Contatore di Parole",
+    "advancedDomEventsInfo_2": "Codificatore/Decodificatore Cifrario di Cesare",
+    "advancedDomEventsInfo_3": "App Quiz Interattiva",
     "advancedDomEventsInfo_4": "Timer Pomodoro",
-    "advancedDomEventsInfo_5": "Test di velocità di scrittura",
+    "advancedDomEventsInfo_5": "Test di Velocità di Scrittura",
 
-    "classes": "Classi",
-    "classesInfo_1": "Sistema di gestione della biblioteca",
-    "classesInfo_2": "Tracker delle spese con grafico"
+    "classes": "Progetti JavaScript OOP",
+    "classesInfo_1": "Sistema di Gestione Biblioteca",
+    "classesInfo_2": "Tracciatore di Spese con Visualizzazione",
+
+    "filesAndApi": "Progetti di Sistema File",
+    "filesAndApiInfo_1": "Generatore di File di Testo",
+    "filesAndApiInfo_2": "Editor di Testo basato su Browser",
+    "filesAndApiInfo_3": "Analizzatore di Metadati dei File",
+    "filesAndApiInfo_4": "Traduttore Locale utilizzando File di Testo"
   },
 
   "NODE_SECTION": {
-
-    "nodeModules": "Moduli Node.js",
-    "nodeModulesInfo": "Spiegazione dettagliata sui Moduli Node.js",
-    "express": "Express.js",
-    "expressInfo": "Spiegazione dettagliata su Express.js",
-    "restApi": "API REST",
-    "restApiInfo": "Spiegazione dettagliata sulle API REST",
-    "databases": "Database",
-    "databasesInfo": "Spiegazione dettagliata sui Database",
-    "authentication": "Autenticazione",
-    "authenticationInfo": "Spiegazione dettagliata sull'Autenticazione",
-    "deployment": "Deployment",
-    "deploymentInfo": "Spiegazione dettagliata sul Deployment"
-
+    "nodeModules": "Progetti di Moduli Node.js",
+    "express": "Applicazioni Express.js",
+    "expressInfo_1": "Generatore di Barzellette Casuali",
+    "expressInfo_2": "Generatore di QrCode",
+    "expressInfo_3": "Generatore di Meme Personalizzati",
+    "expressInfo_4": "Progetto Pokedex con Node",
+    "expressInfo_5": "Ricerca Utenti GitHub",
+    "expressInfo_6": "Widget Meteo",
+    "expressInfo_7": "Web Scraper con Puppeteer",
+    "expressInfo_8": "API REST con Interfaccia Client Interattiva",
+    "expressInfo_9": "Applicazione Chat Locale",
+    "expressInfo_10": "Rilevamento e Classificazione Oggetti con TensorFlow",
+    "expressInfo": "Server web e applicazioni costruite con Express",
+    "restApi": "Progetti API REST",
+    "restApiInfo": "API REST funzionali per vari casi d'uso",
+    "databases": "Progetti di Integrazione Database",
+    "databasesInfo": "Applicazioni con connettività e gestione database",
+    "authentication": "Sistemi di Autenticazione",
+    "authenticationInfo": "Implementazioni sicure di autenticazione utente",
+    "deployment": "Applicazioni Deployate",
+    "deploymentInfo": "Progetti con configurazioni e strategie di deployment"
   },
 
   "REACT_SECTION": {
-
-    "components": "Componenti",
-    "componentsInfo": "Spiegazione dettagliata sui Componenti",
-    "props": "Props",
-    "propsInfo": "Spiegazione dettagliata sulle Props",
-    "state": "Stato",
-    "stateInfo": "Spiegazione dettagliata sullo Stato",
-    "hooks": "Hooks",
-    "hooksInfo": "Spiegazione dettagliata sugli Hooks",
-    "contextApi": "API di Contesto",
-    "contextApiInfo": "Spiegazione dettagliata sull'API di Contesto",
-    "reactRouter": "React Router",
-    "reactRouterInfo": "Spiegazione dettagliata su React Router",
-    "redux": "Redux",
-    "reduxInfo": "Spiegazione dettagliata su Redux",
-    "testing": "Testing",
-    "testingInfo": "Spiegazione dettagliata sul Testing"
-
+    "components": "Progetti Basati sui Componenti",
+    "componentsInfo": "Applicazioni che mostrano architettura di componenti riutilizzabili",
+    "props": "Progetti di Dimostrazione Props",
+    "propsInfo": "Esempi di utilizzo efficace delle props e pattern",
+    "state": "Demo di Gestione Stato",
+    "stateInfo": "Progetti che evidenziano diversi approcci di gestione dello stato",
+    "hooks": "Progetti React Hooks",
+    "hooksInfo": "Applicazioni costruite con React hooks",
+    "contextApi": "Implementazioni di Context API",
+    "contextApiInfo": "Progetti che utilizzano React Context per la gestione dello stato",
+    "reactRouter": "Progetti di Routing",
+    "reactRouterInfo": "Applicazioni multi-pagina con React Router",
+    "redux": "Applicazioni Redux",
+    "reduxInfo": "Progetti che implementano la gestione dello stato con Redux",
+    "testing": "Applicazioni React Testate",
+    "testingInfo": "Progetti con copertura completa di test"
   },
 
   "SQL_SECTION": {
-
-    "sqlBasics": "Fondamenti di SQL",
-    "sqlBasicsInfo": "Spiegazione dettagliata sui Fondamenti di SQL",
-    "joins": "Join",
-    "joinsInfo": "Spiegazione dettagliata sui Join",
-    "aggregations": "Aggregazioni",
-    "aggregationsInfo": "Spiegazione dettagliata sulle Aggregazioni",
-    "subqueries": "Subquery",
-    "subqueriesInfo": "Spiegazione dettagliata sulle Subquery",
-    "normalization": "Normalizzazione",
-    "normalizationInfo": "Spiegazione dettagliata sulla Normalizzazione",
-    "indexes": "Indici",
-    "indexesInfo": "Spiegazione dettagliata sugli Indici"
+    "sqlBasics": "Progetti SQL di Base",
+    "sqlBasicsInfo": "Implementazioni fondamentali di progettazione e query di database",
+    "joins": "Progetti Basati sui Join",
+    "joinsInfo": "Soluzioni di database che utilizzano join SQL complessi",
+    "aggregations": "Progetti di Aggregazione Dati",
+    "aggregationsInfo": "Applicazioni con aggregazioni SQL e analitiche",
+    "subqueries": "Progetti di Query Avanzate",
+    "subqueriesInfo": "Implementazioni con query annidate e complesse",
+    "normalization": "Progetti di Design Database",
+    "normalizationInfo": "Design e implementazioni di schemi database normalizzati",
+    "indexes": "Database Ottimizzati per le Prestazioni",
+    "indexesInfo": "Progetti con prestazioni di query ottimizzate mediante indici"
   }
-
-
 }

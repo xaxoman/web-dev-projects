@@ -12,7 +12,7 @@ function translateWord(word, lang) {
             .then(data => {
                 const lines = data.split('\n');
                 for (const line of lines) {
-                    const [italiano, inglese] = line.trim().split(' '); // Trim whitespace from each line
+                    const [italiano, inglese] = line.trim().split(' '); // rimuove spazi iniziali e finali
                     console.log("Italian:", italiano, "English:", inglese, "Word:", word); // Debugging
                     if (lang === 'ita' && italiano === word) {
                         resolve(`Translation in English: ${inglese}`);
@@ -32,12 +32,12 @@ function translateWord(word, lang) {
     });
 }
 
-// Function to display translation
+// funzione per visualizzare la traduzione
 function displayTranslation(translation) {
     document.getElementById('translationResult').textContent = translation;
 }
 
-// Event listener for form submission
+// eventListener per il form di traduzione
 document.getElementById('translationForm').addEventListener('submit', async function(event) {
     event.preventDefault();
     const word = document.getElementById('word').value.trim();
